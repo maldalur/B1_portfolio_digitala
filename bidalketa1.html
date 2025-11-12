@@ -17,11 +17,51 @@
             <a href="index.html">📋 Sarrera</a>
             <a href="bidalketa1.html" class="active">📦 B1.1 Lehen Bidalketa</a>
             <a href="bidalketa2.html">📦 B1.2 Bigarren Bidalketa</a>
+            <a href="bidalketa3.html">📦 B1.3 Hirugarren Bidalketa</a>
         </nav>
         
         <!-- IRAKURKETA MODUA / MODO LECTURA POR VOZ -->
-        <div style="position: fixed; bottom: 20px; left: 20px; z-index: 1000;">
-            <button id="audioReaderBtn" onclick="toggleAudioReader()" 
+        <div id="audioReaderPanel" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: none;">
+            <div style="margin-bottom: 10px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #667eea;">🌐 Hizkuntza / Idioma:</label>
+                <select id="languageSelect" onchange="changeLanguage()" style="width: 100%; padding: 8px; border: 2px solid #667eea; border-radius: 8px; font-size: 14px; cursor: pointer;">
+                    <option value="es-ES">🇪🇸 Español</option>
+                    <option value="eu-ES">🇪🇺 Euskara</option>
+                    <option value="en-US">🇬🇧 English</option>
+                    <option value="fr-FR">🇫🇷 Français</option>
+                </select>
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button id="playPauseBtn" onclick="togglePlayPause()" 
+                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                               color: white; 
+                               border: none; 
+                               border-radius: 10px; 
+                               padding: 10px 20px; 
+                               font-size: 20px; 
+                               cursor: pointer; 
+                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                               transition: all 0.3s ease;">
+                    ▶️ Play
+                </button>
+                <button onclick="closeAudioPanel()" 
+                        style="background: #dc3545; 
+                               color: white; 
+                               border: none; 
+                               border-radius: 10px; 
+                               padding: 10px 20px; 
+                               font-size: 14px; 
+                               cursor: pointer; 
+                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                               transition: all 0.3s ease;">
+                    ❌ Itxi
+                </button>
+            </div>
+        </div>
+        
+        <!-- Botón flotante para abrir el panel -->
+        <div style="position: fixed; bottom: 20px; left: 20px; z-index: 999;">
+            <button id="audioReaderBtn" onclick="openAudioPanel()" 
                     style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
                            color: white; 
                            border: none; 
@@ -427,62 +467,86 @@
     <!-- AUDIO READER SCRIPT / IRAKURKETA AUDIO SCRIPT -->
     <script>
         let isReading = false;
+        let isPaused = false;
         let utterance = null;
         let currentIndex = 0;
         let contentElements = [];
         let availableVoices = [];
-        let selectedLanguage = 'es-ES'; // Por defecto español
+        let selectedLanguage = 'es-ES';
         
-        // Cargar voces disponibles
         function loadVoices() {
             availableVoices = window.speechSynthesis.getVoices();
             console.log('Voces disponibles:', availableVoices.map(v => v.lang + ' - ' + v.name));
-            
-            // Intentar encontrar voz en euskera
-            const basqueVoice = availableVoices.find(v => v.lang.startsWith('eu'));
-            if (basqueVoice) {
-                selectedLanguage = basqueVoice.lang;
-                console.log('Voz en euskera encontrada:', basqueVoice.name);
-            } else {
-                console.log('No hay voz en euskera, usando español');
-            }
+            updateLanguageOptions();
         }
         
-        // Cargar voces al inicio
+        function updateLanguageOptions() {
+            const select = document.getElementById('languageSelect');
+            const hasBasque = availableVoices.some(v => v.lang.startsWith('eu'));
+            
+            Array.from(select.options).forEach(option => {
+                const lang = option.value.substring(0, 2);
+                if (lang === 'eu' && !hasBasque) {
+                    option.disabled = true;
+                    option.text += ' (Ez dago erabilgarri)';
+                }
+            });
+        }
+        
         if (speechSynthesis.onvoiceschanged !== undefined) {
             speechSynthesis.onvoiceschanged = loadVoices;
         }
         loadVoices();
         
-        function toggleAudioReader() {
-            const btn = document.getElementById('audioReaderBtn');
+        function openAudioPanel() {
+            document.getElementById('audioReaderPanel').style.display = 'block';
+            document.getElementById('audioReaderBtn').style.display = 'none';
+        }
+        
+        function closeAudioPanel() {
+            stopAudioReader();
+            document.getElementById('audioReaderPanel').style.display = 'none';
+            document.getElementById('audioReaderBtn').style.display = 'block';
+        }
+        
+        function changeLanguage() {
+            selectedLanguage = document.getElementById('languageSelect').value;
+            console.log('Idioma seleccionado:', selectedLanguage);
+            
+            if (isReading) {
+                stopAudioReader();
+                setTimeout(startAudioReader, 100);
+            }
+        }
+        
+        function togglePlayPause() {
+            const btn = document.getElementById('playPauseBtn');
             
             if (!isReading) {
-                // Hasieratu irakurketa / Iniciar lectura
                 startAudioReader();
-                btn.textContent = '🔇';
+                btn.textContent = '⏸️ Pause';
                 btn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
                 isReading = true;
+                isPaused = false;
+            } else if (isPaused) {
+                window.speechSynthesis.resume();
+                btn.textContent = '⏸️ Pause';
+                isPaused = false;
             } else {
-                // Gelditu irakurketa / Detener lectura
-                stopAudioReader();
-                btn.textContent = '🔊';
-                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-                isReading = false;
+                window.speechSynthesis.pause();
+                btn.textContent = '▶️ Play';
+                isPaused = true;
             }
         }
         
         function startAudioReader() {
-            // Asegurarse de que las voces estén cargadas
             if (availableVoices.length === 0) {
                 loadVoices();
             }
             
-            // Lortu eduki guztiak / Obtener todo el contenido
             const content = document.querySelector('.content');
             contentElements = Array.from(content.querySelectorAll('h2, h3, h4, p, li'))
                 .filter(el => {
-                    // Filtratu elementu hutsak eta irudiak / Filtrar elementos vacíos e imágenes
                     const text = el.textContent.trim();
                     return text.length > 0 && !el.querySelector('img') && !el.classList.contains('badge');
                 });
@@ -500,18 +564,15 @@
             const element = contentElements[currentIndex];
             const text = element.textContent.trim();
             
-            // Nabarmendu irakurtzen ari den elementua / Resaltar elemento que se está leyendo
             element.style.backgroundColor = '#fff3cd';
             element.style.transition = 'background-color 0.3s';
             
-            // Sortu utterance / Crear utterance
             utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = selectedLanguage;
-            utterance.rate = 0.85; // Abiadura / Velocidad (más lento para mejor comprensión)
+            utterance.rate = 0.85;
             utterance.pitch = 1;
             utterance.volume = 1;
             
-            // Intentar usar la mejor voz disponible
             const voice = availableVoices.find(v => v.lang === selectedLanguage) || 
                          availableVoices.find(v => v.lang.startsWith(selectedLanguage.substring(0, 2))) ||
                          availableVoices[0];
@@ -519,14 +580,12 @@
                 utterance.voice = voice;
             }
             
-            // Amaiera kudeatzea / Manejar finalización
             utterance.onend = function() {
                 element.style.backgroundColor = '';
                 currentIndex++;
-                setTimeout(readNextElement, 100); // Pequeña pausa entre elementos
+                setTimeout(readNextElement, 100);
             };
             
-            // Errorea kudeatzea / Manejar error
             utterance.onerror = function(event) {
                 console.error('Speech synthesis error:', event);
                 element.style.backgroundColor = '';
@@ -534,28 +593,28 @@
                 readNextElement();
             };
             
-            // Hasi irakurketa / Iniciar lectura
             window.speechSynthesis.speak(utterance);
         }
         
         function stopAudioReader() {
             window.speechSynthesis.cancel();
             isReading = false;
+            isPaused = false;
             currentIndex = 0;
             
-            // Kendu nabarmentze guztiak / Quitar todos los resaltados
             contentElements.forEach(el => {
                 if (el && el.style) {
                     el.style.backgroundColor = '';
                 }
             });
             
-            const btn = document.getElementById('audioReaderBtn');
-            btn.textContent = '🔊';
-            btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            const btn = document.getElementById('playPauseBtn');
+            if (btn) {
+                btn.textContent = '▶️ Play';
+                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
         }
         
-        // Gelditu irakurketa orria itxi aurretik / Detener lectura antes de cerrar la página
         window.addEventListener('beforeunload', function() {
             stopAudioReader();
         });
