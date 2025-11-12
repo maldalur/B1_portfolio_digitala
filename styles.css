@@ -448,34 +448,111 @@ body.reading-mode .task-card {
 
 /* Texto alto contraste */
 body.high-contrast {
-    background: #000;
+    background: #000 !important;
 }
 
 body.high-contrast .container {
-    background: #000;
-    color: #fff;
+    background: #000 !important;
+    color: #fff !important;
+}
+
+body.high-contrast header {
+    background: #000 !important;
+    color: #fff !important;
+    border-bottom: 3px solid #ffff00;
 }
 
 body.high-contrast .task-card {
-    background: #1a1a1a;
-    color: #fff;
-    border: 2px solid #fff;
+    background: #1a1a1a !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
 }
 
 body.high-contrast h1,
 body.high-contrast h2,
 body.high-contrast h3,
 body.high-contrast h4 {
-    color: #ffff00;
+    color: #ffff00 !important;
+}
+
+body.high-contrast p,
+body.high-contrast li,
+body.high-contrast span,
+body.high-contrast label {
+    color: #fff !important;
 }
 
 body.high-contrast a {
-    color: #00ffff;
+    color: #00ffff !important;
+    text-decoration: underline;
+}
+
+body.high-contrast a:hover {
+    color: #ffff00 !important;
 }
 
 body.high-contrast .badge {
-    background: #fff;
-    color: #000;
+    background: #fff !important;
+    color: #000 !important;
+}
+
+body.high-contrast .main-nav {
+    background: #000 !important;
+    border-bottom: 3px solid #ffff00 !important;
+}
+
+body.high-contrast .main-nav a,
+body.high-contrast .main-nav .dropbtn {
+    color: #00ffff !important;
+}
+
+body.high-contrast .main-nav a:hover,
+body.high-contrast .main-nav .dropbtn:hover,
+body.high-contrast .main-nav a.active {
+    background: #333 !important;
+    color: #ffff00 !important;
+}
+
+body.high-contrast footer {
+    background: #000 !important;
+    color: #fff !important;
+    border-top: 3px solid #ffff00;
+}
+
+body.high-contrast .tool-item,
+body.high-contrast .rule-card {
+    background: #1a1a1a !important;
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+body.high-contrast button,
+body.high-contrast .accessibility-button {
+    background: #333 !important;
+    color: #ffff00 !important;
+    border: 2px solid #ffff00 !important;
+}
+
+body.high-contrast button:hover,
+body.high-contrast .accessibility-button:hover {
+    background: #555 !important;
+    color: #fff !important;
+}
+
+body.high-contrast .accessibility-menu {
+    background: #000 !important;
+    color: #fff !important;
+    border: 3px solid #ffff00 !important;
+}
+
+body.high-contrast input[type="checkbox"] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body.high-contrast code {
+    background: #1a1a1a !important;
+    color: #00ff00 !important;
+    border: 1px solid #fff !important;
 }
 
 /* Tamaño de texto grande */
