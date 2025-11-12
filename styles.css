@@ -510,3 +510,73 @@ body.reading-mode img[src*="icon"],
 body.reading-mode img[src*="decoration"] {
     display: none;
 }
+
+/* PANEL DE ACCESIBILIDAD / IRISGARRITASUN PANELA */
+.accessibility-panel {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.accessibility-toggle {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.accessibility-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.accessibility-options {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    min-width: 280px;
+}
+
+.accessibility-options h3 {
+    margin-bottom: 15px;
+    color: #28a745;
+    font-size: 1.1em;
+}
+
+.accessibility-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.accessibility-option:hover {
+    background: #f8f9fa;
+}
+
+.accessibility-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.accessibility-option label {
+    cursor: pointer;
+    font-size: 0.95em;
+    user-select: none;
+}
