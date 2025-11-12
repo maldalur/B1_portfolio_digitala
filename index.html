@@ -3,223 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nire Portfolio Digitala - B1 Gaitasun Digitala</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            overflow: hidden;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        
-        nav {
-            background: #f8f9fa;
-            padding: 15px;
-            border-bottom: 3px solid #667eea;
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: #667eea;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        
-        nav a:hover {
-            background: #667eea;
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        section {
-            margin-bottom: 50px;
-            scroll-margin-top: 20px;
-        }
-        
-        section h2 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 3px solid #667eea;
-        }
-        
-        .task-card {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .task-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-        }
-        
-        .task-card h3 {
-            color: #764ba2;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        
-        .tool-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .tool-item {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #667eea;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        }
-        
-        .tool-item h4 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-        
-        .tool-item p {
-            color: #666;
-            font-size: 0.95em;
-        }
-        
-        .netiquette-rules {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .rule-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-        
-        .rule-card h4 {
-            font-size: 1.3em;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .rule-number {
-            background: white;
-            color: #667eea;
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-        
-        .infographic {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            margin-top: 30px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .infographic h3 {
-            color: #764ba2;
-            font-size: 1.8em;
-            margin-bottom: 30px;
-        }
-        
-        .emoji {
-            font-size: 2em;
-        }
-        
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
-        
-        .badge {
-            display: inline-block;
-            padding: 5px 15px;
-            background: #667eea;
-            color: white;
-            border-radius: 20px;
-            font-size: 0.9em;
-            margin-right: 10px;
-            margin-bottom: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8em;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .tool-grid, .netiquette-rules {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title>Sarrera - B1 Portfolio Digitala</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -229,602 +14,98 @@
             <p><strong>Mikel Aldalur</strong></p>
         </header>
         
-        <nav>
-            <div style="position: relative; display: inline-block;"></div>
-                <a href="#sarrera" style="cursor: pointer;">Sarrera ▼</a>
-                <div style="display: none; position: absolute; background: white; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; border-radius: 5px; margin-top: 5px;">
-                    <a href="#sarrera" style="display: block; padding: 12px 16px; color: #667eea;">📋 Sarrera</a>
-                    <a href="#komunikazioa" style="display: block; padding: 12px 16px; color: #667eea;">💬 1.A Komunikazioa</a>
-                    <a href="#elkarlana" style="display: block; padding: 12px 16px; color: #667eea;">🤝 1.B Elkarlana</a>
-                    <a href="#netiketa" style="display: block; padding: 12px 16px; color: #667eea;">📜 1.C Netiketa</a>
-                </div>
-
-            <div style="position: relative; display: inline-block;">
-                <a href="#oinarrizko-edukia" style="cursor: pointer;">Edukiak ▼</a>
-                <div style="display: none; position: absolute; background: white; min-width: 200px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); z-index: 1; border-radius: 5px; margin-top: 5px;">
-                    <a href="#aurre-ebaluazioa" style="display: block; padding: 12px 16px; color: #667eea;">📝 4.A Aurre-Ebaluazioa</a>
-                    <a href="#oinarrizko-edukia" style="display: block; padding: 12px 16px; color: #667eea;">📚 2.A Oinarrizko Edukia</a>
-                    <a href="#eduki-aurreratua" style="display: block; padding: 12px 16px; color: #667eea;">🚀 2.B Eduki Aurreratua</a>
-                </div>
-            </div>
+        <nav class="main-nav">
+            <a href="sarrera.html" class="active">📋 Sarrera</a>
+            <a href="bidalketa1.html">� B1.1 Lehen Bidalketa</a>
+            <a href="bidalketa2.html">� B1.2 Bigarren Bidalketa</a>
         </nav>
         
         <div class="content">
-            <!-- SARRERA -->
-            <section id="sarrera">
-                <h2>📋 Sarrera</h2>
+            <section>
+                <h2>📋 Ongi Etorri Nire Portfolio Digitalera! 👋</h2>
+                
                 <div class="task-card">
                     <p style="font-size: 1.1em;">
-                        Kaixo! Portfolio honetan <strong>B1 mailako lehen bidalketari</strong> dagozkion 3 atazak aurkezten ditut:
+                        Portfolio honetan <strong>B1 mailako gaitasun digitalaren akreditaziorako</strong> bi bidalketa aurkezten ditut, hainbat tresna eta teknika digitalak erabiliz.
                     </p>
-                    <ul style="margin-top: 20px; margin-left: 20px; font-size: 1.05em;">
-                        <li style="margin-bottom: 10px;">✅ <strong>1.A Ataza:</strong> Irakasle taldearen komunikaziorako testuingurua</li>
-                        <li style="margin-bottom: 10px;">✅ <strong>1.B Ataza:</strong> Irakasle taldearen elkarlanerako testuingurua</li>
-                        <li style="margin-bottom: 10px;">✅ <strong>1.C Ataza:</strong> Netiketa arauak</li>
-                    </ul>
                 </div>
                 
-                <div class="task-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-                    <h3 style="color: white;">🎥 Azalpen Bideoa</h3>
-                    <p style="margin-bottom: 20px;">Hemen ikusgai dago portfolio honen azalpena bideoan:</p>
-                    <video controls style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
-                        <source src="B1_portfolio_1.mp4" type="video/mp4">
-                        Zure nabigatzaileak ez du bideo hau onartzen.
-                    </video>
-                </div>
-            </section>
-
-            <!-- 1.A ATAZA: KOMUNIKAZIOA -->
-            <section id="komunikazioa">
-                <h2>💬 1.A Ataza: Komunikaziorako Testuingurua</h2>
-                
-                <div class="task-card">
-                    <h3>Helburua</h3>
-                    <p>Gure irakasle taldean komunikatzeko erabiltzen ditugun kanal eta tresna digitalak erakustea.</p>
-                </div>
-                
-                <div class="task-card">
-                    <h3>Erabiltzen ditugun Komunikazio Tresnak</h3>
+                <div class="bidalketa-card" style="background: #e8f5e9;">
+                    <h3 style="color: #2e7d32;">📦 Lehen Bidalketa (B1.1)</h3>
+                    <p style="margin-bottom: 15px; color: #666;">Irakasle taldearen komunikazio eta elkarlana digitalak</p>
                     
-                    <div class="tool-grid">
-                        <div class="tool-item">
-                            <h4>📧 Email (Gmail)</h4>
-                            <span class="badge">Ofiziala</span>
-                            <p>Komunikazio formal eta ofiziala egiteko. Bilera deiak, txostenak, informazio garrantzitsua.</p>
+                    <div class="ataza-grid">
+                        <div class="ataza-box" style="border-color: #4caf50;">
+                            <div class="emoji">💬</div>
+                            <h4>1.A Komunikazioa</h4>
+                            <p>Tresna digitalak komunikaziorako</p>
                         </div>
                         
-                        <div class="tool-item">
-                            <h4>💬 Google Chat Taldea</h4>
-                            <span class="badge">Informala</span>
-                            <p>Eguneroko komunikazio azkarra. Galdera laburrak eta abisu azkarrak kanal antolatuetan.</p>
+                        <div class="ataza-box" style="border-color: #66bb6a;">
+                            <div class="emoji">🤝</div>
+                            <h4>1.B Elkarlana</h4>
+                            <p>Tresna digitalak elkarlanerako</p>
                         </div>
                         
-                        <div class="tool-item">
-                            <h4>🎥 Google Meet</h4>
-                            <span class="badge">Ofiziala</span>
-                            <span class="badge">Bideokonferentziak</span>
-                            <p>Bilerak online egiteko. Pantaila partekatzea, txata eta fitxategiak partekatzea.</p>
-                        </div>
-                        
-                        <div class="tool-item">
-                            <h4>📢 Moodle Foroa</h4>
-                            <span class="badge">Akademikoa</span>
-                            <p>Ikasle eta irakasleen arteko komunikazioa. Galderak eta erantzunak.</p>
+                        <div class="ataza-box" style="border-color: #81c784;">
+                            <div class="emoji">📜</div>
+                            <h4>1.C Netiketa</h4>
+                            <p>Netiketa arauak</p>
                         </div>
                     </div>
                     
-                    <div style="margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa:</h4>
-                        <p><strong>Tresna hauek komunikazioa bermatzeko balio dute</strong> hainbat motatako komunikazio beharretarako: formala (Gmail, Google Meet), informala (Google Chat), eta akademikoa (Moodle). Horrela, informazioa azkar eta eraginkortasunez heltzen da irakasle talde osora.</p>
+                    <div style="text-align: center; margin-top: 25px;">
+                        <a href="bidalketa1.html" style="display: inline-block; padding: 15px 40px; background: #4caf50; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 10px rgba(76,175,80,0.3); transition: all 0.3s;">
+                            📖 Ikusi Lehen Bidalketa Osoa →
+                        </a>
+                    </div>
+                    
+                    <div class="video-section" style="margin-top: 30px; padding: 20px; background: white; border-radius: 10px;">
+                        <h4 style="color: #2e7d32; margin-bottom: 15px;">🎥 Azalpen Bideoa</h4>
+                        <video controls style="width: 100%; max-width: 800px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+                            <source src="B1_portfolio_1.mp4" type="video/mp4">
+                            Zure nabigatzaileak ez du bideo hau onartzen.
+                        </video>
                     </div>
                 </div>
-            </section>
-
-            <!-- 1.B ATAZA: ELKARLANA -->
-            <section id="elkarlana">
-                <h2>🤝 1.B Ataza: Elkarlanerako Testuingurua</h2>
                 
-                <div class="task-card">
-                    <h3>Helburua</h3>
-                    <p>Gure irakasle taldean elkarlanean lan egiteko erabiltzen ditugun kanal eta tresna digitalak erakustea.</p>
-                </div>
-                
-                <div class="task-card">
-                    <h3>Erabiltzen ditugun Elkarlana Tresnak</h3>
+                <div class="bidalketa-card" style="background: #e3f2fd; margin-top: 30px;">
+                    <h3 style="color: #1565c0;">📦 Bigarren Bidalketa (B1.2)</h3>
+                    <p style="margin-bottom: 10px;"><strong>Gaia:</strong> Adimen Artifiziala - Ikusmeneko Sistemak (Computer Vision)</p>
+                    <p style="margin-bottom: 15px; color: #666;">Ezagutza mailaren araberako eduki digitalen ebidentziatzea</p>
                     
-                    <div class="tool-grid">
-                        <div class="tool-item">
-                            <h4>☁️ Google Drive</h4>
-                            <span class="badge">Dokumentuak</span>
-                            <span class="badge">Denbera errealean</span>
-                            <p>Dokumentuak, kalkulu-orriak eta aurkezpenak partekatzeko eta batera editatzeko. Bertsio-kontrola denbera errealean.</p>
+                    <div class="ataza-grid">
+                        <div class="ataza-box" style="border-color: #42a5f5;">
+                            <div class="emoji">📝</div>
+                            <h4>4.A Aurre-Ebaluazioa</h4>
+                            <p>Google Forms + Dinamika</p>
                         </div>
                         
-                        <div class="tool-item">
-                            <h4>📊 Google Drive (Unitate partekatuak)</h4>
-                            <span class="badge">Fitxategiak</span>
-                            <p>Fitxategi handiak partekatzeko eta karpeta egituratu batean antolatzeko. Sarbide kontrol zehatza eta taldeko kudeaketa.</p>
+                        <div class="ataza-box" style="border-color: #64b5f6;">
+                            <div class="emoji">📚</div>
+                            <h4>2.A Oinarrizko Edukia</h4>
+                            <p>Prezentazio interaktiboa</p>
                         </div>
                         
-                        <div class="tool-item">
-                            <h4>📝 Padlet</h4>
-                            <span class="badge">Ideiak</span>
-                            <span class="badge">Adibururruak</span>
-                            <p>Ideia-adibururruetarako. Informazio bisual eta interaktiboa partekatzeko.</p>
-                        </div>
-                        
-                        <div class="tool-item">
-                            <h4>📅 Google Calendar</h4>
-                            <span class="badge">Antolaketa</span>
-                            <p>Bilera eta gertakari partekatuak antolatzeko. Gogorarazpenak eta abisu automatikoak.</p>
-                        </div>
-                        
-                        <div class="tool-item">
-                            <h4>🎯 Trello</h4>
-                            <span class="badge">Proiektuak</span>
-                            <p>Proiektuen kudeaketa. Zereginen banaketa eta jarraipena egiteko.</p>
-                        </div>
-                        
-                        <div class="tool-item">
-                            <h4>📚 Moodle</h4>
-                            <span class="badge">Edukiak</span>
-                            <p>Irakasgaien edukiak eta materialak partekatzeko. Zereginak eta azterketen kudeaketa.</p>
+                        <div class="ataza-box" style="border-color: #90caf9;">
+                            <div class="emoji">🚀</div>
+                            <h4>2.B Eduki Aurreratua</h4>
+                            <p>Jupyter Notebooks + GitHub</p>
                         </div>
                     </div>
                     
-                    <div style="margin-top: 30px; padding: 20px; background: #f0f8e8; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa:</h4>
-                        <p><strong>Tresna hauek informazioa, edukiak partekatzeko eta elkarlanean elkar eragiteko balio dute.</strong> Horrela, irakasle taldea modu koordinatuan lan egin dezake, dokumentuak batera editatu, erantzukizunak banatu, eta proiektuen jarraipena egin denbera errealean. Elkarlana errazten dute eta eraginkortasuna hobetzen dute.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 1.C ATAZA: NETIKETA -->
-            <section id="netiketa">
-                <h2>📜 1.C Ataza: Netiketa Arauak</h2>
-                
-                <div class="task-card">
-                    <h3>Helburua</h3>
-                    <p>Gure irakasle taldearen lan testuingururako Netiketa arauak ezartzea eta infografia batean islatzea.</p>
-                </div>
-                
-                <div class="infographic">
-                    <h3>🎯 GURE NETIKETA ARAUAK</h3>
-                    <p style="color: #666; margin-bottom: 30px;">Komunikazio digitalean errespetuz aritzeko gidalerroak</p>
-                    
-                    <div class="netiquette-rules">
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">1</span>
-                                <span>Errespetua</span>
-                            </h4>
-                            <p>Beti errespetuz eta adeitasunez tratatu kideak. Saihestu iraingarriak edo erasotzaileak diren mezuak.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">2</span>
-                                <span>Argitasuna</span>
-                            </h4>
-                            <p>Idatzi modu argi eta zuzenean. Erabili letra larriak ulergarritasuna hobetzeko, ez oihukateko.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">3</span>
-                                <span>Pribatutasuna</span>
-                            </h4>
-                            <p>Errespetatu besteen pribatutasuna. Ez partekatu informazio pertsonala edo sentikorra baimenik gabe.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">4</span>
-                                <span>Erantzun Azkarra</span>
-                            </h4>
-                            <p>Erantzun mezuei denbora arrazoigarri batean (24-48 ordu). Bideratze automatikoa aktibatu oporretan.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">5</span>
-                                <span>Euskara Egokia</span>
-                            </h4>
-                            <p>Erabili hizkuntza egokia eta profesionala. Saihestu laburdura gehiegi eta emotikonoak komunikazio formalean.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">6</span>
-                                <span>Konfidentzialtasuna</span>
-                            </h4>
-                            <p>Mantendu taldeko kontuak konfidentzialak. Ez partekatu kanpoaldean gure barne eztabaidak.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">7</span>
-                                <span>Ordu Egokiak</span>
-                            </h4>
-                            <p>Lanorduak errespetatu. Saihestu mezuak ordutegi formaletik kanpo salbu eta premiazkoak direnean.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">8</span>
-                                <span>Erantzukizuna</span>
-                            </h4>
-                            <p>Hartu erantzukizuna gure hitz eta ekintzengatik. Onartu akatsak eta ikasi horietatik.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">9</span>
-                                <span>Inklusioa</span>
-                            </h4>
-                            <p>Sustatu inklusioa eta aniztasuna. Erabili hizkuntza inklusiboa eta errespetatu kultura desberdinak.</p>
-                        </div>
-                        
-                        <div class="rule-card">
-                            <h4>
-                                <span class="rule-number">10</span>
-                                <span>Irudi Profesionala</span>
-                            </h4>
-                            <p>Mantendu irudi profesional bat komunikazio digitalean. Gure ikastetxea ordezkatzen dugu.</p>
-                        </div>
+                    <div style="text-align: center; margin-top: 25px;">
+                        <a href="bidalketa2.html" style="display: inline-block; padding: 15px 40px; background: #1976d2; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 10px rgba(25,118,210,0.3); transition: all 0.3s;">
+                            📖 Ikusi Bigarren Bidalketa Osoa →
+                        </a>
                     </div>
                 </div>
                 
-                <div class="task-card" style="margin-top: 30px;">
-                    <div style="padding: 20px; background: #fff3e0; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa:</h4>
-                        <p><strong>Netiketa arau hauek komunikazio kanaletan errespetuz aritzeko balio dute.</strong> Gidalerroak ezarriz, lankidetza positibo eta errespetuzko bat sustatzen dugu, komunikazioak profesionalki kudeatzeko bidea errazten dugularik eta taldeko kide guztien arteko errespetua bermatuz. Horrek ingurunea hobea sortzen du lan-taldeko guztientzat.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 4.A ATAZA: AURRE-EBALUAZIOA -->
-            <section id="aurre-ebaluazioa">
-                <h2>📝 4.A Ataza: Aurre-Ebaluazioa</h2>
-                
-                <div class="task-card">
-                    <h3>Helburua</h3>
-                    <p>Ikasleen ezagutza maila ezberdintzeko aurre-ebaluazio bat sortzea <strong>"Ikusmeneko Sistemak (Computer Vision)"</strong> gaiaren inguruan.</p>
-                </div>
-                
-                <div class="task-card">
-                    <h3>🎯 Gaia: Adimen Artifiziala - Ikusmeneko Sistemak</h3>
-                    
-                    <div style="padding: 20px; background: #e3f2fd; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">Zer da Computer Vision?</h4>
-                        <p>Computer Vision edo Ikusmen Artifiziala ordenagailuei irudiak eta bideoak "ikusteko" eta ulertzeko gaitasuna ematen dien Adimen Artifizialaren azpiesparrua da. Giza ikusmena imitatuz, sistema hauek objektuak identifikatu, formak ezagutu eta erabakiak har ditzakete irudi-informazioan oinarrituta.</p>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #f3e5f5; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #764ba2; margin-bottom: 10px;">📋 Ebaluazio Tresna</h4>
-                        <p><strong>Google Forms galdetegi bat</strong> sortu da 10 galderarekin, ikasleek Computer Vision-aren inguruko oinarrizko eta aurreratutako kontzeptuak ezagutzen dituzten jakiteko.</p>
-                        
-                        <div style="margin-top: 15px; padding: 15px; background: white; border-radius: 8px;">
-                            <p><strong>Galdetegi Digitala:</strong></p>
-                            <a href="https://forms.gle/ZUZENKETA_BEHAR" target="_blank" style="display: inline-block; margin-top: 10px; padding: 12px 24px; background: #667eea; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-                                📝 Egin Aurre-Ebaluazioa
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #fff3e0; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">🎮 Dinamika Interaktiboa: "Ikusmen Challenge"</h4>
-                        <p><strong>Kahoot ordez</strong>, dinamika hau proposatzen da:</p>
-                        
-                        <div style="margin-top: 15px; margin-left: 20px;">
-                            <p><strong>Fase 1 - Identifikatu!</strong> (5 min)</p>
-                            <p style="margin-left: 20px; color: #666;">Irudiak erakutsi eta ikasleek Computer Vision aplikazioak identifikatu behar dituzte (aurpegi-ezagutza, QR kodea, objektu-detekzioa...)</p>
-                            
-                            <p style="margin-top: 15px;"><strong>Fase 2 - Deskribatu!</strong> (5 min)</p>
-                            <p style="margin-left: 20px; color: #666;">Taldeka, Computer Vision aplikazio bat aukeratu eta deskribatu nola funtzionatzen duen eguneroko bizitzan</p>
-                            
-                            <p style="margin-top: 15px;"><strong>Fase 3 - Asmatu!</strong> (5 min)</p>
-                            <p style="margin-left: 20px; color: #666;">Proposatu arazo bat eta taldeak konponbide bat diseinatu Computer Vision erabiliz</p>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #e8f5e9; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">📊 Emaitzen Interpretazioa</h4>
-                        <ul style="margin-left: 20px;">
-                            <li><strong>0-3 puntu:</strong> Oinarrizko Maila → 2.A Atalera joan (eduki sinpleak)</li>
-                            <li><strong>4-7 puntu:</strong> Maila Ertaina → 2.A edo 2.B aukeratu</li>
-                            <li><strong>8-10 puntu:</strong> Maila Aurreratua → 2.B Atalera joan (eduki konplexuak)</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="task-card">
-                    <div style="padding: 20px; background: #f0f8e8; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa:</h4>
-                        <p><strong>Aurre-ebaluazio hau ikasleen ezagutza maila ezberdintzeko balio du</strong>, gero eduki egokitua eskaintzeko: oinarrizkoa (2.A) edo aurreratua (2.B). Google Forms digitalak ebaluazio azkarra eta automatizatua ahalbideratzen du, eta dinamika interaktiboak ikasleen parte-hartzea eta motibazioa areagotzen du.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 2.A ATAZA: OINARRIZKO EDUKI DIGITALA -->
-            <section id="oinarrizko-edukia">
-                <h2>📚 2.A Ataza: Oinarrizko Ezagutzak Lantzeko Eduki Digitala</h2>
-                
-                <div class="task-card">
-                    <h3>Helburua</h3>
-                    <p>Ikasleentzat oinarrizko mailako eduki digital bat sortzea, Computer Vision-aren oinarrizko kontzeptuak ikasteko (aurre-ebaluazioan 0-3 edo 4-7 puntu lortu dutenak).</p>
-                </div>
-                
-                <div class="task-card">
-                    <h3>📱 Formatua: Prezentazio Interaktiboa</h3>
-                    
-                    <div style="padding: 20px; background: #e3f2fd; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #667eea; margin-bottom: 15px;">🎨 "Ikusmeneko Sistemak - Lehen Pausuak"</h4>
-                        
-                        <p><strong>Plataforma:</strong> Google Slides + Genially (elementu interaktiboekin)</p>
-                        
-                        <div style="margin-top: 20px;">
-                            <h5 style="color: #764ba2; margin-bottom: 10px;">📋 Edukiaren Egitura:</h5>
-                            <ul style="margin-left: 20px; line-height: 1.8;">
-                                <li><strong>Dia 1:</strong> Titulua eta Sarrera (animazioak, musika)</li>
-                                <li><strong>Dia 2:</strong> Zer da Computer Vision? (GIF, audioa)</li>
-                                <li><strong>Dia 3:</strong> Irudi Digitala - Pixelak (zoom slider interaktiboa)</li>
-                                <li><strong>Dia 4:</strong> RGB Kolore Sistema (RGB mixer, quiz txikia)</li>
-                                <li><strong>Dia 5:</strong> Irudi Motak (konparazio bisuala)</li>
-                                <li><strong>Dia 6:</strong> Aplikazio Errealak (6 flip cards)</li>
-                                <li><strong>Dia 7:</strong> Python + OpenCV (kode adibidea)</li>
-                                <li><strong>Dia 8:</strong> Praktika Sinplea (jarduera gidatua)</li>
-                                <li><strong>Dia 9:</strong> Laburpena (mindmap, quiz 5 galdera)</li>
-                                <li><strong>Dia 10:</strong> Hurrengo Pausuak (2.B atalera botoiak)</li>
-                            </ul>
-                        </div>
-                        
-                        <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
-                            <p><strong>🔗 Estekak:</strong></p>
-                            <ul style="margin-left: 20px; margin-top: 10px;">
-                                <li><a href="#" style="color: #667eea;">📊 Google Slides Bertsioa</a> (esteka gehitu behar da)</li>
-                                <li><a href="#" style="color: #667eea;">✨ Genially Bertsioa</a> (interaktiboa)</li>
-                                <li><a href="#" style="color: #667eea;">📥 PDF Deskargagarria</a> (offline)</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #f3e5f5; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #764ba2; margin-bottom: 10px;">🎯 Ikaskuntza Helburuak</h4>
-                        <div class="tool-grid" style="margin-top: 15px;">
-                            <div class="tool-item">
-                                <h4>📖 Kontzeptualak</h4>
-                                <ul style="margin-left: 15px; font-size: 0.95em;">
-                                    <li>Zer da Computer Vision ulertu</li>
-                                    <li>Irudi digitalaren funtsak (pixelak, RGB)</li>
-                                    <li>Aplikazio errealak identifikatu</li>
-                                </ul>
-                            </div>
-                            <div class="tool-item">
-                                <h4>💻 Prozeduralak</h4>
-                                <ul style="margin-left: 15px; font-size: 0.95em;">
-                                    <li>Irudiak kargatu eta bistaratu</li>
-                                    <li>Kolore-kanalak banandu</li>
-                                    <li>OpenCV funtzioak erabili</li>
-                                </ul>
-                            </div>
-                            <div class="tool-item">
-                                <h4>🤝 Jarrerazkoak</h4>
-                                <ul style="margin-left: 15px; font-size: 0.95em;">
-                                    <li>Teknologia berrietara jarrera positiboa</li>
-                                    <li>Akatsak ikasteko aukerak</li>
-                                    <li>Talde lankidetza</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #fff3e0; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">🎮 Elementu Interaktiboak</h4>
-                        <ul style="margin-left: 20px; line-height: 1.8;">
-                            <li>✅ <strong>RGB Mixer:</strong> Sliderrak koloreak sortzeko</li>
-                            <li>✅ <strong>Flip Cards:</strong> 6 karta aplikazio desberdinekin</li>
-                            <li>✅ <strong>Quiz Interaktiboa:</strong> 5 galdera + feedback berehalakoa</li>
-                            <li>✅ <strong>Zoom Slider:</strong> Pixelak ikusteko</li>
-                            <li>✅ <strong>Kode Kopiatzailea:</strong> Python kodea kopiatzeko</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="task-card">
-                    <div style="padding: 20px; background: #e8f5e9; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa:</h4>
-                        <p><strong>Eduki digital honek OINARRIZKO ezagutzak lortzeko balio du</strong> Computer Vision-aren inguruan. Prezentazio interaktibo bisualak kontzeptuak modu erraz eta erakargarrian azaltzen ditu, elementu multimedia eta praktika sinpleekin. Ikasleak beren erritmoan aurrera egin dezakete eta auto-ebaluazio bat egiten dute amaieran. Formatua egokia da hasiberrientzat eta pausuz-pausu gidatzen ditu.</p>
-                    </div>
-                </div>
-                
-                <div class="task-card">
-                    <div style="padding: 15px; background: #e0f2f1; border-radius: 10px; border-left: 4px solid #00897b;">
-                        <h4 style="color: #00897b; margin-bottom: 10px;">📜 Lizentziak</h4>
-                        <p><strong>Egilea:</strong> Mikel Aldalur<br>
-                        <strong>Lizenzia:</strong> Creative Commons BY-NC-SA 4.0<br>
-                        <strong>Irudiak:</strong> Pixabay (CC0), Unsplash, Wikimedia Commons<br>
-                        <strong>Bideoak:</strong> YouTube (CC BY), Khan Academy (CC BY-NC-SA)<br>
-                        <strong>Musika:</strong> Bensound (CC BY-ND)</p>
-                        <p style="margin-top: 10px; font-size: 0.9em;"><a href="2A_ataza_oinarrizko_edukia.md" style="color: #00897b;">📄 Dokumentazio osoa ikusi</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 2.B ATAZA: EDUKI AURRERATUA -->
-            <section id="eduki-aurreratua">
-                <h2>🚀 2.B Ataza: Ezagutzan Sakontzeko Eduki Digitala</h2>
-                
-                <div class="task-card">
-                    <h3>Helburua</h3>
-                    <p>Ikasleentzat maila aurreratuko eduki digital bat sortzea, Computer Vision-en teknika aurreratuak ikasteko (aurre-ebaluazioan 8-10 puntu lortu dutenak).</p>
-                </div>
-                
-                <div class="task-card">
-                    <h3>💻 Formatua: Jupyter Notebook Interaktiboa + GitHub</h3>
-                    
-                    <div style="padding: 20px; background: #f3e5f5; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #764ba2; margin-bottom: 15px;">🧠 "Deep Computer Vision - Proiektuak Eskutik"</h4>
-                        
-                        <p><strong>Plataforma:</strong> Jupyter Notebook + GitHub Repository + Google Colab</p>
-                        
-                        <div style="margin-top: 20px;">
-                            <h5 style="color: #667eea; margin-bottom: 10px;">📦 Repository Egitura:</h5>
-                            <div style="background: #2b2b2b; color: #00ff00; padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.9em; overflow-x: auto;">
-Deep_Computer_Vision_Proiektuak/<br>
-├── 01_CNN_Oinarriak/<br>
-│   ├── 01_CNN_Sarrera.ipynb<br>
-│   └── 02_Lehen_CNN_Eredua.ipynb<br>
-├── 02_Transfer_Learning/<br>
-│   ├── 03_ResNet_Transfer_Learning.ipynb<br>
-│   └── 04_VGG16_Fine_Tuning.ipynb<br>
-├── 03_Objektu_Detekzioa/<br>
-│   ├── 05_YOLO_Sarrera.ipynb<br>
-│   └── 06_Objektu_Detekzio_Proiektua.ipynb<br>
-├── 04_Aurpegi_Ezagutza/<br>
-│   ├── 07_Face_Recognition.ipynb<br>
-│   └── 08_Emotion_Detection.ipynb<br>
-└── 05_Proiektu_Finala/<br>
-    └── 09_Proiektu_Osoa.ipynb
-                            </div>
-                        </div>
-                        
-                        <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px;">
-                            <p><strong>🔗 Estekak:</strong></p>
-                            <ul style="margin-left: 20px; margin-top: 10px;">
-                                <li><a href="https://github.com/maldalur/Deep_Computer_Vision_Proiektuak" target="_blank" style="color: #764ba2;">📦 GitHub Repository</a> (sortu behar da)</li>
-                                <li><a href="#" style="color: #764ba2;">☁️ Google Colab Notebooks</a> (GPU batekin)</li>
-                                <li><a href="#" style="color: #764ba2;">🌐 Binder (interaktiboa)</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #e3f2fd; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">🎯 Ikaskuntza Helburuak</h4>
-                        <div class="tool-grid" style="margin-top: 15px;">
-                            <div class="tool-item">
-                                <h4>🧠 Kontzeptualak</h4>
-                                <ul style="margin-left: 15px; font-size: 0.95em;">
-                                    <li>CNN arkitektura ulertu</li>
-                                    <li>Deep Learning funtsak</li>
-                                    <li>Transfer Learning kontzeptua</li>
-                                    <li>Eredu ezagunak (ResNet, YOLO)</li>
-                                </ul>
-                            </div>
-                            <div class="tool-item">
-                                <h4>⚙️ Prozeduralak</h4>
-                                <ul style="margin-left: 15px; font-size: 0.95em;">
-                                    <li>CNN eredua diseinatu</li>
-                                    <li>Pre-trained ereduak erabili</li>
-                                    <li>YOLO objektu-detekzioa</li>
-                                    <li>Aurpegi-ezagutza sisteman</li>
-                                </ul>
-                            </div>
-                            <div class="tool-item">
-                                <h4>🎯 Jarrerazkoak</h4>
-                                <ul style="margin-left: 15px; font-size: 0.95em;">
-                                    <li>Arazo konplexuen erabakia</li>
-                                    <li>Esperimentazioa</li>
-                                    <li>Kode etikoa IA-ren garapenean</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #fff3e0; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #764ba2; margin-bottom: 10px;">📓 Notebook-ak (9 guztira)</h4>
-                        <div style="margin-left: 20px; line-height: 1.9;">
-                            <p><strong>1️⃣ CNN Oinarriak:</strong> CNN vs MLP, feature maps birtualizazioa</p>
-                            <p><strong>2️⃣ Transfer Learning:</strong> ResNet50 erabiliz katuen vs. txakurren sailkapena</p>
-                            <p><strong>3️⃣ Fine-Tuning:</strong> Geruzak desizoztu eta accuracy hobetu</p>
-                            <p><strong>4️⃣ YOLO Sarrera:</strong> Objektu detekzioa vs. sailkapena</p>
-                            <p><strong>5️⃣ YOLO Praktika:</strong> Denbera errealean webcam-ekin</p>
-                            <p><strong>6️⃣ Aurpegi Ezagutza:</strong> Face Recognition liburutegia</p>
-                            <p><strong>7️⃣ Emozio Detekzioa:</strong> DeepFace erabiliz</p>
-                            <p><strong>8️⃣ Proiektu Finala:</strong> Segurtasun Sistema osoa (SQLite, alertak, log-a)</p>
-                        </div>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #e8f5e9; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">🔧 Teknologiak</h4>
-                        <div class="tool-grid" style="margin-top: 15px;">
-                            <div class="tool-item">
-                                <h4>📚 Liburutegiak</h4>
-                                <p>TensorFlow, Keras, PyTorch, OpenCV, Ultralytics (YOLO), face_recognition, DeepFace</p>
-                            </div>
-                            <div class="tool-item">
-                                <h4>🤖 Ereduak</h4>
-                                <p>ResNet50, VGG16, InceptionV3, YOLOv8, Face Recognition CNN</p>
-                            </div>
-                            <div class="tool-item">
-                                <h4>💾 Datuak</h4>
-                                <p>MNIST, ImageNet, animalia dataset-ak, aurpegi datu-baseak</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="task-card">
-                    <div style="padding: 20px; background: #f0f8e8; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa:</h4>
-                        <p><strong>Eduki digital honek gaiaren inguruan SAKONTZEA ahalbidetzen du</strong> teknika aurreratuak erabiliz. Jupyter Notebook formatuak kodea eta azalpenak txandakatzen ditu, ikasleek denbera errealean exekuta dezaten eta emaitza bisualak lor ditzaten. GitHub bidez kode osoa eskuragarri dago, bertsio-kontrolarekin eta dokumentazio osatuarekin. Ikasleak proiektu erreala garatzera iristen dira (segurtasun sistema), ezagutza praktikoan aplikatuz.</p>
-                    </div>
-                </div>
-                
-                <div class="task-card">
-                    <div style="padding: 15px; background: #e0f2f1; border-radius: 10px; border-left: 4px solid #00897b;">
-                        <h4 style="color: #00897b; margin-bottom: 10px;">📜 Lizentziak</h4>
-                        <p><strong>Egilea:</strong> Mikel Aldalur<br>
-                        <strong>Lizenzia:</strong> Creative Commons BY-NC-SA 4.0<br>
-                        <strong>Liburutegiak:</strong> TensorFlow (Apache 2.0), PyTorch (BSD), OpenCV (Apache 2.0)<br>
-                        <strong>Ereduak:</strong> ResNet (Microsoft, BSD), YOLOv8 (Ultralytics, AGPL-3.0)<br>
-                        <strong>Datuak:</strong> ImageNet (Stanford), MNIST (Domeinu Publikoa)</p>
-                        <p style="margin-top: 10px; font-size: 0.9em;"><a href="2B_ataza_aurreratua.md" style="color: #00897b;">📄 Dokumentazio osoa ikusi</a></p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ONDORIOAK -->
-            <section id="ondorioak">
-                <h2>✅ Ondorioak</h2>
-                <div class="task-card">
-                    <h3>Lorpen Adierazleak Betetzen Dira</h3>
-                    
-                    <div style="padding: 20px; background: #e8f5e9; border-radius: 10px; margin-bottom: 15px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">📋 Lehen Bidalketa (B1.1)</h4>
-                        <ul style="margin-left: 20px; font-size: 1.05em;">
-                            <li style="margin-bottom: 10px;">
-                                <strong>✓ Komunikazioa:</strong> Martxan jarritako tresna digitalek (Gmail, Google Meet, Google Chat, Moodle) irakasle taldean komunikazioa bermatzeko balio dutela argudiatzen da.
-                            </li>
-                            <li style="margin-bottom: 10px;">
-                                <strong>✓ Elkarlana:</strong> Martxan jarritako tresna digitalek (Google Drive, Unitate partekatuak, Padlet, Trello, Calendar) irakasle taldean informazioa, edukiak partekatzeko eta elkarlanean elkar eragiteko balio dutela argudiatzen da.
-                            </li>
-                            <li style="margin-bottom: 10px;">
-                                <strong>✓ Netiketa:</strong> Landutako netiketa arauek komunikazio kanaletan errespetuz aritzeko balio dute.
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div style="padding: 20px; background: #e3f2fd; border-radius: 10px;">
-                        <h4 style="color: #764ba2; margin-bottom: 10px;">📋 Bigarren Bidalketa (B1.2)</h4>
-                        <ul style="margin-left: 20px; font-size: 1.05em;">
-                            <li style="margin-bottom: 10px;">
-                                <strong>✓ Aurre-Ebaluazioa (4.A):</strong> Sortutako aurre-ebaluazioak (Google Forms + dinamika) ikasleen ezagutza maila ezberdintzeko balio du Computer Vision gaiaren inguruan.
-                            </li>
-                            <li style="margin-bottom: 10px;">
-                                <strong>✓ Oinarrizko Edukia (2.A):</strong> Sortutako eduki digitalak (prezentazio interaktiboa) ikasketa-helburu jakin bat du eta proposatutako gaiaren inguruko OINARRIZKO ezagutzak lortzeko balio du, elementu multimedia eta praktika sinpleekin.
-                            </li>
-                            <li style="margin-bottom: 10px;">
-                                <strong>✓ Eduki Aurreratua (2.B):</strong> Sortutako eduki digitalak (Jupyter Notebooks + GitHub) ikasketa-helburu jakin bat du eta proposatutako gaiaren inguruan SAKONTZEA ahalbidetzen du, CNN, Transfer Learning, YOLO eta proiektu errealak erabiliz.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="task-card" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-                    <h3 style="color: white;">🎓 Eskerrik asko!</h3>
-                    <p style="font-size: 1.1em;">Portfolio hau B1 mailako bidalketarako prestatu da, 2025/2026 ikasturtean.</p>
-                    <p style="margin-top: 15px; font-size: 1.05em;"><strong>Gaia:</strong> Adimen Artifiziala - Ikusmeneko Sistemak (Computer Vision)</p>
+                <div class="task-card" style="margin-top: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color: white;">🎯 Helburua</h3>
+                    <p style="font-size: 1.05em;">
+                        Portfolio honek irakaslearen gaitasun digitalak erakusten ditu, tresna desberdinak erabiliz eta eduki digitalak sortuz ezagutza maila desberdinek ikasteko.
+                    </p>
                 </div>
             </section>
         </div>
@@ -834,7 +115,7 @@ Deep_Computer_Vision_Proiektuak/<br>
             <p>Irakaslearen Gaitasun Digitalen Akreditazioa - B1 Maila</p>
             <p>FPIkaskuntzagunea - 2025/2026</p>
             <p style="margin-top: 15px;">
-                🌐 <a href="https://maldalur.github.io/B1_portfolio_digitala/" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">Portfolio Online</a>
+                🌐 <a href="https://maldalur.github.io/B1_portfolio_digitala/" target="_blank" style="color: #64b5f6; text-decoration: none; font-weight: bold;">Portfolio Online</a>
             </p>
         </footer>
     </div>
