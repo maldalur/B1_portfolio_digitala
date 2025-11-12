@@ -1,0 +1,218 @@
+═══════════════════════════════════════════════════════════════
+📹 SUBTÍTULOS PARA EL VÍDEO DEL PORTFOLIO - B1 GAITASUN DIGITALA
+═══════════════════════════════════════════════════════════════
+
+⏱️ TIEMPO ESTIMADO: 4-5 minutos
+📌 IMPORTANTE: Asegúrate de que tu cara sea visible en el vídeo para verificar la autoría
+
+
+═══════════════════════════════════════════════════════════════
+🎬 SECUENCIA 1: INTRODUCCIÓN (0:00 - 0:30)
+═══════════════════════════════════════════════════════════════
+
+[Muestra tu cara en cámara y saluda]
+
+🗣️ QUÉ DECIR:
+"Kaixo! Mikel Aldalur naiz eta bideo honetan nire portfolio digitala aurkeztuko dizuet. 
+Portfolio honek B1 mailako lehen bidalketaren 3 atazak jasotzen ditu: 
+komunikaziorako testuingurua, elkarlanerako testuingurua, eta netiketa arauak."
+
+📝 SUBTÍTULOS EN PANTALLA:
+"Kaixo! Mikel Aldalur naiz
+Nire portfolio digitala aurkezten dut
+3 atazak: Komunikazioa, Elkarlana, Netiketa"
+
+
+═══════════════════════════════════════════════════════════════
+🎬 SECUENCIA 2: ABRIR EL PORTFOLIO (0:30 - 1:00)
+═══════════════════════════════════════════════════════════════
+
+[Abre el archivo portfolio_b1.html en el navegador]
+[Muestra la página principal con el título y la navegación]
+
+🗣️ QUÉ DECIR:
+"Hemen ikusten dugun bezala, portfolio hau web orri batean antolatu dut. 
+Goian nabigazio menua daukagu, non 3 atazak atzitzen ahal ditugun.
+Hasteko, lehen atazarekin hasiko naiz: komunikaziorako testuingurua."
+
+📝 SUBTÍTULOS EN PANTALLA:
+"Portfolio web orria
+Nabigazio menua: 3 atazak
+Hasteko: 1.A Komunikazioa"
+
+
+═══════════════════════════════════════════════════════════════
+🎬 SECUENCIA 3: TAREA 1.A - COMUNICACIÓN (1:00 - 2:00)
+═══════════════════════════════════════════════════════════════
+
+[Haz clic en "1.A Komunikazioa" en el menú]
+[Desplázate lentamente por la sección mostrando las herramientas]
+
+🗣️ QUÉ DECIR:
+"Lehen ataza honetan, gure irakasle taldean komunikatzeko erabiltzen ditugun 
+tresna digitalak aurkezten ditut. 
+
+Ikusten duzuen bezala, hemen ditugu:
+- Email edo Outlook, komunikazio formal eta ofizialerako
+- WhatsApp taldea, egunero-eguneko komunikazio azkarreko
+- Microsoft Teams, bileretarako eta bideokonferentzietarako
+- Eta Moodle foroa, ikasle eta irakasleen arteko komunikaziorako.
+
+Tresna hauek komunikazioa bermatzeko balio dute modu desberdinetan: 
+formal, informal, eta akademikoan."
+
+📝 SUBTÍTULOS EN PANTALLA:
+"1.A Ataza: Komunikaziorako testuingurua
+Tresnak:
+• Email/Outlook - Komunikazio formala
+• WhatsApp - Komunikazio informala
+• Teams - Bideokonferentziak
+• Moodle - Komunikazio akademikoa
+→ Komunikazioa bermatzeko balio dute"
+
+
+═══════════════════════════════════════════════════════════════
+🎬 SECUENCIA 4: TAREA 1.B - COLABORACIÓN (2:00 - 3:15)
+═══════════════════════════════════════════════════════════════
+
+[Haz clic en "1.B Elkarlana" en el menú]
+[Desplázate mostrando cada herramienta de colaboración]
+
+🗣️ QUÉ DECIR:
+"Bigarren ataza honetan, elkarlanean lan egiteko erabiltzen ditugun tresnak 
+aurkezten ditut.
+
+Hemen ikusten ditugun tresnak honako hauek dira:
+- Google Drive, dokumentuak partekatzeko eta batera editatzeko
+- OneDrive eta SharePoint, fitxategi handiak partekatzeko
+- Padlet, ideia-adibururruetarako
+- Google Calendar, bilera eta gertakari partekatuak antolatzeko
+- Trello, proiektuen kudeaketarako
+- Eta Moodle, irakasgaien edukiak eta materialak partekatzeko.
+
+Tresna hauek guztiak informazioa eta edukiak partekatzeko eta 
+elkarlanean elkar eragiteko balio dute. Horrela, irakasle taldea 
+modu koordinatuan lan egin dezake."
+
+📝 SUBTÍTULOS EN PANTALLA:
+"1.B Ataza: Elkarlanerako testuingurua
+Tresnak:
+• Google Drive - Dokumentuak batera editatzeko
+• OneDrive/SharePoint - Fitxategiak partekatzeko
+• Padlet - Ideiak partekatzeko
+• Google Calendar - Antolaketa
+• Trello - Proiektuen kudeaketa
+• Moodle - Edukiak partekatzeko
+→ Informazioa partekatzeko eta elkarlanean aritzeko"
+
+
+═══════════════════════════════════════════════════════════════
+🎬 SECUENCIA 5: TAREA 1.C - NETIQUETA (3:15 - 4:30)
+═══════════════════════════════════════════════════════════════
+
+[Haz clic en "1.C Netiketa" en el menú]
+[Desplázate lentamente por la infografía de las 10 reglas]
+
+🗣️ QUÉ DECIR:
+"Eta azken ataza honetan, gure irakasle taldearentzako netiketa arauak 
+ezarri ditut infografia baten.
+
+Hemen 10 arau nagusi ditugu komunikazio digitalean errespetuz aritzeko:
+
+Lehenengo hiruk: Errespetua, Argitasuna, eta Pribatutasuna.
+Kideak errespetuz tratatzea, modu argian idaztea, eta pribatutasuna bermatzea.
+
+Gero: Erantzun azkarra ematea, hizkuntza egokia erabiltzea, 
+konfidentzialtasuna mantentzea, ordu egokiak errespetatzea...
+
+Eta azkenik: Erantzukizuna hartzea, inklusioa sustatzea, 
+eta irudi profesionala mantentzea.
+
+Arau hauek guztiak komunikazio kanaletan errespetuz aritzeko balio dute, 
+eta lankidetza positibo bat sustatzen dute gure irakasle taldean."
+
+📝 SUBTÍTULOS EN PANTALLA:
+"1.C Ataza: Netiketa arauak
+10 arau nagusiak:
+1. Errespetua 2. Argitasuna 3. Pribatutasuna
+4. Erantzun azkarra 5. Euskara egokia
+6. Konfidentzialtasuna 7. Ordu egokiak
+8. Erantzukizuna 9. Inklusioa 10. Irudi profesionala
+→ Komunikazio kanaletan errespetuz aritzeko"
+
+
+═══════════════════════════════════════════════════════════════
+🎬 SECUENCIA 6: CONCLUSIÓN (4:30 - 5:00)
+═══════════════════════════════════════════════════════════════
+
+[Desplázate hasta la sección "Ondorioak" al final]
+[Vuelve a mostrar tu cara en cámara]
+
+🗣️ QUÉ DECIR:
+"Laburbilduz, portfolio honetan erakutsi ditut:
+- Komunikaziorako tresnak, komunikazioa bermatzeko
+- Elkarlanerako tresnak, informazioa partekatzeko eta elkar eragiteko
+- Eta netiketa arauak, errespetuz aritzeko.
+
+Hiru atalak ere lorpen adierazleak betetzen dituzte.
+Eskerrik asko arreta emateagatik!"
+
+📝 SUBTÍTULOS EN PANTALLA:
+"Ondorioak:
+✓ Komunikazioa bermatzeko tresnak
+✓ Informazioa partekatzeko tresnak
+✓ Errespetuz aritzeko netiketa arauak
+Lorpen adierazleak beteta!
+Eskerrik asko! 🎓"
+
+
+═══════════════════════════════════════════════════════════════
+📋 CONSEJOS PARA LA GRABACIÓN
+═══════════════════════════════════════════════════════════════
+
+✅ ANTES DE GRABAR:
+• Abre el portfolio_b1.html en tu navegador
+• Ten este documento de subtítulos abierto en otra pantalla
+• Practica la navegación 1-2 veces antes de grabar
+• Asegúrate de que tu cámara funciona y te enfoca bien
+• Busca un lugar con buena iluminación y sin ruido
+
+✅ DURANTE LA GRABACIÓN:
+• Muestra tu cara claramente al principio y al final
+• Habla despacio y con claridad
+• Navega lentamente para que se vea bien el contenido
+• Mantén el cursor del ratón visible cuando señales cosas
+• Sonríe y sé natural
+
+✅ HERRAMIENTAS RECOMENDADAS PARA GRABAR:
+• Loom (https://www.loom.com) - RECOMENDADO, muy fácil
+• OBS Studio - Gratis y profesional
+• Grabadora de Windows (Win + G)
+• Zoom - Si ya lo tienes instalado
+
+✅ DESPUÉS DE GRABAR:
+• Sube el vídeo a YouTube (puede ser no listado)
+• O sube a Loom/Vimeo
+• Copia el enlace del vídeo
+• Copia también el enlace de tu portfolio (súbelo a GitHub Pages, 
+  Google Drive con acceso público, o cualquier hosting)
+• Pega ambos enlaces en el formulario de Moodle
+
+
+═══════════════════════════════════════════════════════════════
+🎯 PRÓXIMOS PASOS
+═══════════════════════════════════════════════════════════════
+
+1. ✅ Portfolio creado → portfolio_b1.html
+2. ✅ Subtítulos preparados → Este documento
+3. ⏭️ Graba el vídeo (máx 5 minutos)
+4. ⏭️ Sube el vídeo a YouTube/Loom/Vimeo
+5. ⏭️ Sube el portfolio a algún sitio público (GitHub Pages, Google Drive, etc.)
+6. ⏭️ Copia ambos enlaces
+7. ⏭️ Ve a: http://fpikaskuntzagunea.hezkuntza.net/mod/assign/view.php?id=6481
+8. ⏭️ Pega los enlaces en el formulario que ya preparamos
+9. ⏭️ Haz clic en "Gorde aldaketak" (Guardar cambios)
+10. ⏭️ Marca la primera bidalketa como completada
+
+
+¡Suerte con la grabación! Goazen!
