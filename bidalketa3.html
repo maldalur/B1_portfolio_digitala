@@ -20,61 +20,7 @@
             <a href="bidalketa3.html" class="active">📦 B1.3 Hirugarren Bidalketa</a>
         </nav>
         
-        <!-- IRAKURKETA MODUA / MODO LECTURA POR VOZ -->
-        <div id="audioReaderPanel" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: none;">
-            <div style="margin-bottom: 10px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #667eea;">🌐 Hizkuntza / Idioma:</label>
-                <select id="languageSelect" onchange="changeLanguage()" style="width: 100%; padding: 8px; border: 2px solid #667eea; border-radius: 8px; font-size: 14px; cursor: pointer;">
-                    <option value="es-ES">🇪🇸 Español</option>
-                    <option value="eu-ES">🇪🇺 Euskara</option>
-                    <option value="en-US">🇬🇧 English</option>
-                    <option value="fr-FR">🇫🇷 Français</option>
-                </select>
-            </div>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <button id="playPauseBtn" onclick="togglePlayPause()" 
-                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                               color: white; 
-                               border: none; 
-                               border-radius: 10px; 
-                               padding: 10px 20px; 
-                               font-size: 20px; 
-                               cursor: pointer; 
-                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                               transition: all 0.3s ease;">
-                    ▶️ Play
-                </button>
-                <button onclick="closeAudioPanel()" 
-                        style="background: #dc3545; 
-                               color: white; 
-                               border: none; 
-                               border-radius: 10px; 
-                               padding: 10px 20px; 
-                               font-size: 14px; 
-                               cursor: pointer; 
-                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                               transition: all 0.3s ease;">
-                    ❌ Itxi
-                </button>
-            </div>
-        </div>
-        
-        <!-- Botón flotante para abrir el panel -->
-        <div style="position: fixed; bottom: 20px; left: 20px; z-index: 999;">
-            <button id="audioReaderBtn" onclick="openAudioPanel()" 
-                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                           color: white; 
-                           border: none; 
-                           border-radius: 50%; 
-                           width: 60px; 
-                           height: 60px; 
-                           font-size: 24px; 
-                           cursor: pointer; 
-                           box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-                           transition: all 0.3s ease;">
-                🔊
-            </button>
-        </div>
+
         
         <div class="content">
             <!-- SARRERA -->
@@ -82,11 +28,11 @@
                 <h2>📋 Sarrera</h2>
                 <div class="task-card">
                     <p style="font-size: 1.1em;">
-                        Hirugarren bidalketa honetan <strong>irisgarritasun hobekuntzak</strong> aurkezten ditut sortutako eduki digitalentzako:
+                        Hirugarren bidalketa honetan <strong>2 ataza</strong> aurkezten ditut <strong>Irisgarritasuna</strong> eta <strong>Pertsonalizazioa</strong>:
                     </p>
-                    <ul style="margin-top: 20px; margin-left: 20px; font-size: 1.05em; line-height: 1.8;">
-                        <li>♿ <strong>5.A Ataza:</strong> Eduki digitalen irisgarritasuna</li>
-                        <li>🎯 <strong>5.B Ataza:</strong> Ikaskuntza pertsonalizazioa</li>
+                    <ul style="margin-left: 20px; line-height: 1.8;">
+                        <li>♿ <strong>5.A Ataza:</strong> Eduki Digitalen Irisgarritasuna</li>
+                        <li>🎯 <strong>5.B Ataza:</strong> Aztarna Digitalaren Araberako Ikaskuntza Pertsonalizazioa</li>
                     </ul>
                 </div>
             </section>
@@ -97,58 +43,61 @@
                 
                 <div class="task-card">
                     <h3>🎯 Helburua</h3>
-                    <p>Sortutako eduki digitalak (2.A eta 2.B atazak) irisgarriak egitea, desgaitasuna edo zailtasunak dituzten ikasleentzako.</p>
+                    <p>Portfolio digitalean <strong>irisgarritasuna</strong> bermatzeko hainbat elementu integratu dira, ikasle guztientzat (ezgaitasunak dituztenentzat barne) edukia erabilgarri eta ulergarri egiteko.</p>
                 </div>
                 
                 <div class="task-card">
-                    <h3>✨ Gehitutako Irisgarritasun Elementuak</h3>
+                    <h3>♿ Inplementatutako Irisgarritasun Elementuak</h3>
                     
-                    <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px;">
+                    <p style="margin-bottom: 20px;">Portfolio osoan zehar <strong>6 irisgarritasun funtzio</strong> desberdin inplementatu dira:</p>
+                    
+                    <div style="display: grid; gap: 20px; margin-top: 25px;">
                         
-                        <!-- Irakurketa Modua -->
+                        <!-- Audio Irakurketa -->
                         <div class="feature-item" style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #667eea;">
-                            <h4 style="color: #667eea; margin-bottom: 10px;">🔊 Audio Bidezko Irakurketa</h4>
-                            <p style="margin-bottom: 15px;"><strong>Zer da?</strong> Text-to-Speech teknologia erabiliz, webguneko eduki guztia audio bidez entzuteko aukera.</p>
+                            <h4 style="color: #667eea; margin-bottom: 10px;">🔊 Audio Irakurketa Sistema</h4>
+                            <p style="margin-bottom: 15px;"><strong>Zer da?</strong> Web Speech API erabiliz testua ahotsez irakurtzeko sistema.</p>
                             
-                            <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
-                                <h5 style="color: #764ba2; margin-bottom: 8px;">Ezaugarriak:</h5>
+                                <h5 style="color: #667eea; margin-bottom: 8px;">Ezaugarriak:</h5>
                                 <ul style="margin-left: 20px; line-height: 1.8;">
-                                    <li>▶️ <strong>Play/Pause kontrolak</strong> - Irakurketa kontrolatzeko</li>
-                                    <li>🌐 <strong>Hizkuntza aukeraketa</strong> - Euskara, Gaztelania, Ingelesa, Frantsesa</li>
-                                    <li>💡 <strong>Nabarmentze bisuala</strong> - Irakurtzen ari den testua nabarmenduta</li>
-                                    <li>⚡ <strong>Abiadura egokitua</strong> - 0.85x abiadura, ulertzeko errazagoa</li>
+                                    <li>🌐 <strong>4 hizkuntza:</strong> Gaztelania, Euskara, Ingelesa, Frantsesa</li>
+                                    <li>▶️ <strong>Play/Pause/Stop kontrolak:</strong> Irakurketa kudeatzeko</li>
+                                    <li>🎯 <strong>Nabarmentze automatikoa:</strong> Irakurtzen ari den elementua nabarmendu egiten da</li>
+                                    <li>📦 <strong>Testu luze zatiketa:</strong> Paragrafo luzeak chunk txikietan zatitzen dira (350 karaktere)</li>
+                                    <li>⌨️ <strong>Tekla lasterbideak:</strong> Space (Play/Pause), S (Stop)</li>
+                                    <li>💾 <strong>Hizkuntza persistentzia:</strong> Aukeratutako hizkuntza gordetzen da localStorage-en</li>
                                 </ul>
                             </div>
                             
-                            <div style="background: #e8f4f8; padding: 10px; border-radius: 8px;">
-                                <p style="margin: 0;"><strong>🎓 Onura:</strong> Ikusmen arazoak dituzten ikasleek edo irakurketa zailtasunak dituztenek edukia entzun dezakete.</p>
+                            <div style="background: #e7e3fc; padding: 10px; border-radius: 8px;">
+                                <p style="margin: 0;"><strong>🎓 Onura:</strong> Ikusmen arazoak edo irakurketa zailtasunak (dislexia) dituzten ikasleentzako. Baita hizkuntza ikasteko laguntza moduan ere.</p>
                             </div>
                         </div>
                         
                         <!-- Irakurketa Modua -->
                         <div class="feature-item" style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #28a745;">
                             <h4 style="color: #28a745; margin-bottom: 10px;">📖 Irakurketa Modua</h4>
-                            <p style="margin-bottom: 15px;"><strong>Zer da?</strong> Testu tamaina handiagorik eta lerro arteko espazioa handiagoarekin, irakurketa errazteko.</p>
+                            <p style="margin-bottom: 15px;"><strong>Zer da?</strong> Interfazea sinplifikatzea, distrakzio gutxiago eta irakurketan fokalizatzeko.</p>
                             
                             <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
-                                <h5 style="color: #28a745; margin-bottom: 8px;">Hobekuntzak:</h5>
+                                <h5 style="color: #28a745; margin-bottom: 8px;">Aldaketak:</h5>
                                 <ul style="margin-left: 20px; line-height: 1.8;">
-                                    <li>📏 <strong>Lerro arteko espazioa</strong> - 1.8x espazioa (normala: 1.6x)</li>
-                                    <li>📐 <strong>Paragrafo espazioa</strong> - Paragrafo artean espazio handiagoa</li>
-                                    <li>🎨 <strong>Kontraste handiagoa</strong> - Atzeko plano-kolore zuriago eta letra beltzagoa</li>
-                                    <li>📊 <strong>Lerro zabalera mugatua</strong> - Max 900px, irakurketa erosoagoa</li>
+                                    <li>🎨 <strong>Koloreak sinplifikatuak</strong> - Fondo zuria eta testu beltza</li>
+                                    <li>🖼️ <strong>Irudiak eta grafikoak ezkutatuak</strong> - Distrakzio gutxiago</li>
+                                    <li>📏 <strong>Zabalera mugatua</strong> - Lerro laburragoak irakurketa errazteko (800px max)</li>
+                                    <li>🔲 <strong>Itzal eta efektu kenduak</strong> - Interfaze garbia</li>
                                 </ul>
                             </div>
                             
                             <div style="background: #d4edda; padding: 10px; border-radius: 8px;">
-                                <p style="margin: 0;"><strong>🎓 Onura:</strong> Dislexia edo beste irakurketa zailtasunak dituzten ikasleentzako erosoagoa.</p>
+                                <p style="margin: 0;"><strong>🎓 Onura:</strong> Arreta zailtasunak (ADHD) edo distrakzio asko dituzten ikasleentzako.</p>
                             </div>
                         </div>
                         
                         <!-- Kontraste Altua -->
                         <div class="feature-item" style="background: #f8f9fa; padding: 20px; border-radius: 10px; border-left: 4px solid #ffc107;">
-                            <h4 style="color: #ffc107; margin-bottom: 10px;">⚫⚪ Kontraste Altua</h4>
-                            <p style="margin-bottom: 15px;"><strong>Zer da?</strong> Letra beltz osoa atzeko plano zuri gainean, ikusgarritasun maximoa lortzeko.</p>
+                            <h4 style="color: #ffc107; margin-bottom: 10px;">🎨 Kontraste Altua</h4>
+                            <p style="margin-bottom: 15px;"><strong>Zer da?</strong> Koloreen arteko kontrastea handitzea, irakurketa hobetzeko.</p>
                             
                             <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
                                 <h5 style="color: #ffc107; margin-bottom: 8px;">Aldaketak:</h5>
@@ -221,14 +170,14 @@
                             </div>
                         </div>
                     </div>
-                </div>
                 
-                <div class="task-card" style="background: #e8f5e9;">
-                    <h3 style="color: #2e7d32;">✅ Lorpen Adierazlea</h3>
-                    <p style="font-size: 1.05em;">
-                        <strong>"Aurkeztutako eduki guztietan irisgarritasuna bermatzeko elementuren bat txertatu da"</strong>
-                    </p>
-                    <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> 6 irisgarritasun elementu desberdin inplementatu dira portfolio osoan.</p>
+                    <div class="task-card" style="background: #e8f5e9;">
+                        <h3 style="color: #2e7d32;">✅ Lorpen Adierazlea</h3>
+                        <p style="font-size: 1.05em;">
+                            <strong>"Aurkeztutako eduki guztietan irisgarritasuna bermatzeko elementuren bat txertatu da"</strong>
+                        </p>
+                        <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> 6 irisgarritasun elementu desberdin inplementatu dira portfolio osoan.</p>
+                    </div>
                 </div>
             </section>
 
@@ -398,41 +347,53 @@
             </section>
         </div>
 
-        <!-- IRISGARRITASUN PANELA / PANEL DE ACCESIBILIDAD -->
-        <div class="accessibility-panel">
-            <button class="accessibility-toggle" onclick="toggleAccessibility()">⚙️</button>
-            <div class="accessibility-options" id="accessibilityOptions">
-                <h3>♿ Irisgarritasun Aukerak</h3>
-                
-                <div class="accessibility-option">
-                    <input type="checkbox" id="readingMode" />
-                    <label for="readingMode">📖 Irakurketa Modua</label>
-                </div>
-                
-                <div class="accessibility-option">
-                    <input type="checkbox" id="highContrast" />
-                    <label for="highContrast">⚫⚪ Kontraste Altua</label>
-                </div>
-                
-                <div class="accessibility-option">
-                    <input type="checkbox" id="largeText" />
-                    <label for="largeText">🔍 Testu Handiagoa</label>
-                </div>
-                
-                <div class="accessibility-option">
-                    <input type="checkbox" id="wideSpacing" />
-                    <label for="wideSpacing">↔️ Espaziamendu Zabala</label>
-                </div>
+        <!-- Botón de Accesibilidad -->
+        <button class="accessibility-button" id="accessibilityBtn" aria-label="Irisgarritasun aukerak">
+            ♿
+        </button>
+
+        <!-- Menú de Accesibilidad -->
+        <div class="accessibility-menu" id="accessibilityMenu">
+            <h3>♿ Irisgarritasuna</h3>
+            
+            <div class="accessibility-option">
+                <label for="readingMode">📖 Irakurketa modua</label>
+                <input type="checkbox" id="readingMode">
+            </div>
+            
+            <div class="accessibility-option">
+                <label for="highContrast">🎨 Kontraste altua</label>
+                <input type="checkbox" id="highContrast">
+            </div>
+            
+            <div class="accessibility-option">
+                <label for="largeText">🔤 Testu handia</label>
+                <input type="checkbox" id="largeText">
+            </div>
+            
+            <div class="accessibility-option">
+                <label for="wideSpacing">📏 Tarteak zabaldu</label>
+                <input type="checkbox" id="wideSpacing">
             </div>
         </div>
+
     </div>
 
     <script>
-        // Toggle accesibilidad panel
-        function toggleAccessibility() {
-            const options = document.getElementById('accessibilityOptions');
-            options.style.display = options.style.display === 'none' ? 'block' : 'none';
-        }
+        // Control del menú de accesibilidad
+        const accessibilityBtn = document.getElementById('accessibilityBtn');
+        const accessibilityMenu = document.getElementById('accessibilityMenu');
+
+        accessibilityBtn.addEventListener('click', () => {
+            accessibilityMenu.classList.toggle('active');
+        });
+
+        // Cerrar el menú si se hace clic fuera
+        document.addEventListener('click', (e) => {
+            if (!accessibilityBtn.contains(e.target) && !accessibilityMenu.contains(e.target)) {
+                accessibilityMenu.classList.remove('active');
+            }
+        });
 
         // Modo de lectura
         document.getElementById('readingMode').addEventListener('change', function() {
@@ -479,160 +440,7 @@
         });
     </script>
     
-    <!-- AUDIO READER SCRIPT / IRAKURKETA AUDIO SCRIPT -->
-    <script>
-        let isReading = false;
-        let isPaused = false;
-        let utterance = null;
-        let currentIndex = 0;
-        let contentElements = [];
-        let availableVoices = [];
-        let selectedLanguage = 'es-ES';
-        
-        function loadVoices() {
-            availableVoices = window.speechSynthesis.getVoices();
-            console.log('Voces disponibles:', availableVoices.map(v => v.lang + ' - ' + v.name));
-            updateLanguageOptions();
-        }
-        
-        function updateLanguageOptions() {
-            const select = document.getElementById('languageSelect');
-            const hasBasque = availableVoices.some(v => v.lang.startsWith('eu'));
-            
-            Array.from(select.options).forEach(option => {
-                const lang = option.value.substring(0, 2);
-                if (lang === 'eu' && !hasBasque) {
-                    option.disabled = true;
-                    option.text += ' (Ez dago erabilgarri)';
-                }
-            });
-        }
-        
-        if (speechSynthesis.onvoiceschanged !== undefined) {
-            speechSynthesis.onvoiceschanged = loadVoices;
-        }
-        loadVoices();
-        
-        function openAudioPanel() {
-            document.getElementById('audioReaderPanel').style.display = 'block';
-            document.getElementById('audioReaderBtn').style.display = 'none';
-        }
-        
-        function closeAudioPanel() {
-            stopAudioReader();
-            document.getElementById('audioReaderPanel').style.display = 'none';
-            document.getElementById('audioReaderBtn').style.display = 'block';
-        }
-        
-        function changeLanguage() {
-            selectedLanguage = document.getElementById('languageSelect').value;
-            console.log('Idioma seleccionado:', selectedLanguage);
-            
-            if (isReading) {
-                stopAudioReader();
-                setTimeout(startAudioReader, 100);
-            }
-        }
-        
-        function togglePlayPause() {
-            const btn = document.getElementById('playPauseBtn');
-            
-            if (!isReading) {
-                startAudioReader();
-                btn.textContent = '⏸️ Pause';
-                btn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
-                isReading = true;
-                isPaused = false;
-            } else if (isPaused) {
-                window.speechSynthesis.resume();
-                btn.textContent = '⏸️ Pause';
-                isPaused = false;
-            } else {
-                window.speechSynthesis.pause();
-                btn.textContent = '▶️ Play';
-                isPaused = true;
-            }
-        }
-        
-        function startAudioReader() {
-            if (availableVoices.length === 0) {
-                loadVoices();
-            }
-            
-            const content = document.querySelector('.content');
-            contentElements = Array.from(content.querySelectorAll('h2, h3, h4, p, li'))
-                .filter(el => {
-                    const text = el.textContent.trim();
-                    return text.length > 0 && !el.querySelector('img') && !el.classList.contains('badge');
-                });
-            
-            currentIndex = 0;
-            readNextElement();
-        }
-        
-        function readNextElement() {
-            if (currentIndex >= contentElements.length || !isReading) {
-                stopAudioReader();
-                return;
-            }
-            
-            const element = contentElements[currentIndex];
-            const text = element.textContent.trim();
-            
-            element.style.backgroundColor = '#fff3cd';
-            element.style.transition = 'background-color 0.3s';
-            
-            utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = selectedLanguage;
-            utterance.rate = 0.85;
-            utterance.pitch = 1;
-            utterance.volume = 1;
-            
-            const voice = availableVoices.find(v => v.lang === selectedLanguage) || 
-                         availableVoices.find(v => v.lang.startsWith(selectedLanguage.substring(0, 2))) ||
-                         availableVoices[0];
-            if (voice) {
-                utterance.voice = voice;
-            }
-            
-            utterance.onend = function() {
-                element.style.backgroundColor = '';
-                currentIndex++;
-                setTimeout(readNextElement, 100);
-            };
-            
-            utterance.onerror = function(event) {
-                console.error('Speech synthesis error:', event);
-                element.style.backgroundColor = '';
-                currentIndex++;
-                readNextElement();
-            };
-            
-            window.speechSynthesis.speak(utterance);
-        }
-        
-        function stopAudioReader() {
-            window.speechSynthesis.cancel();
-            isReading = false;
-            isPaused = false;
-            currentIndex = 0;
-            
-            contentElements.forEach(el => {
-                if (el && el.style) {
-                    el.style.backgroundColor = '';
-                }
-            });
-            
-            const btn = document.getElementById('playPauseBtn');
-            if (btn) {
-                btn.textContent = '▶️ Play';
-                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-            }
-        }
-        
-        window.addEventListener('beforeunload', function() {
-            stopAudioReader();
-        });
-    </script>
+    <!-- AUDIO READER UNIFIED SCRIPT -->
+    <script src="audioReader.js"></script>
 </body>
 </html>

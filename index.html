@@ -21,198 +21,54 @@
             <a href="bidalketa3.html">📦 B1.3 Hirugarren Bidalketa</a>
         </nav>
         
-        <!-- IRAKURKETA MODUA / MODO LECTURA POR VOZ -->
-        <div id="audioReaderPanel" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: none;">
-            <div style="margin-bottom: 10px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #667eea;">🌐 Hizkuntza / Idioma:</label>
-                <select id="languageSelect" onchange="changeLanguage()" style="width: 100%; padding: 8px; border: 2px solid #667eea; border-radius: 8px; font-size: 14px; cursor: pointer;">
-                    <option value="es-ES">🇪🇸 Español</option>
-                    <option value="eu-ES">🇪🇺 Euskara</option>
-                    <option value="en-US">🇬🇧 English</option>
-                    <option value="fr-FR">🇫🇷 Français</option>
-                </select>
-            </div>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <button id="playPauseBtn" onclick="togglePlayPause()" 
-                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                               color: white; 
-                               border: none; 
-                               border-radius: 10px; 
-                               padding: 10px 20px; 
-                               font-size: 20px; 
-                               cursor: pointer; 
-                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                               transition: all 0.3s ease;">
-                    ▶️ Play
-                </button>
-                <button onclick="closeAudioPanel()" 
-                        style="background: #dc3545; 
-                               color: white; 
-                               border: none; 
-                               border-radius: 10px; 
-                               padding: 10px 20px; 
-                               font-size: 14px; 
-                               cursor: pointer; 
-                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                               transition: all 0.3s ease;">
-                    ❌ Itxi
-                </button>
-            </div>
-        </div>
-        
-        <!-- Botón flotante para abrir el panel -->
-        <div style="position: fixed; bottom: 20px; left: 20px; z-index: 999;">
-            <button id="audioReaderBtn" onclick="openAudioPanel()" 
-                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                           color: white; 
-                           border: none; 
-                           border-radius: 50%; 
-                           width: 60px; 
-                           height: 60px; 
-                           font-size: 24px; 
-                           cursor: pointer; 
-                           box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-                           transition: all 0.3s ease;">
-                🔊
-            </button>
-        </div>
-        
         <div class="content">
             <section>
                 <h2>📋 Ongi Etorri Nire Portfolio Digitalera! 👋</h2>
-                
-                <div class="task-card">
-                    <p style="font-size: 1.1em;">
-                        Portfolio honetan <strong>B1 mailako gaitasun digitalaren akreditaziorako</strong> bi bidalketa aurkezten ditut, hainbat tresna eta teknika digitalak erabiliz.
+                <div class="task-card" style="background: #fff;">
+                    <p style="font-size:1.05em; line-height:1.6;">
+                        Hemen aurkezten dira <strong>B1 Gaitasun Digitalen Akreditazioko</strong> bidalketak. Ezagutza maila desberdinak eta irisgarritasunaren hobekuntzak integratu dira ikaskuntza eraginkorra eta inklusiboa lortzeko.
                     </p>
                 </div>
-                
-                <div class="bidalketa-card" style="background: #e8f5e9;">
-                    <h3 style="color: #2e7d32;">📦 Lehen Bidalketa (B1.1)</h3>
-                    <p style="margin-bottom: 15px; color: #666;">Irakasle taldearen komunikazio eta elkarlana digitalak</p>
-                    
-                    <div class="ataza-grid">
-                        <div class="ataza-box" style="border-color: #4caf50;">
-                            <div class="emoji">💬</div>
-                            <h4>1.A Komunikazioa</h4>
-                            <p>Tresna digitalak komunikaziorako</p>
-                        </div>
-                        
-                        <div class="ataza-box" style="border-color: #66bb6a;">
-                            <div class="emoji">🤝</div>
-                            <h4>1.B Elkarlana</h4>
-                            <p>Tresna digitalak elkarlanerako</p>
-                        </div>
-                        
-                        <div class="ataza-box" style="border-color: #81c784;">
-                            <div class="emoji">📜</div>
-                            <h4>1.C Netiketa</h4>
-                            <p>Netiketa arauak</p>
-                        </div>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 25px;">
-                        <a href="bidalketa1.html" style="display: inline-block; padding: 15px 40px; background: #4caf50; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 10px rgba(76,175,80,0.3); transition: all 0.3s;">
-                            📖 Ikusi Lehen Bidalketa Osoa →
-                        </a>
-                    </div>
-                    
-                    <div class="video-section" style="margin-top: 30px; padding: 20px; background: white; border-radius: 10px;">
-                        <h4 style="color: #2e7d32; margin-bottom: 15px;">🎥 Azalpen Bideoa - Lehen Bidalketa</h4>
-                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
-                            <iframe 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);"
-                                src="https://www.youtube.com/embed/udDRDfqSZZE?cc_load_policy=1&hl=eu" 
-                                title="Portfolio Digital B1 - Lehen Bidalketa" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div style="margin-top: 10px; padding: 10px; background: #e8f5e9; border-left: 4px solid #4caf50; border-radius: 4px;">
-                            <p style="margin: 0; color: #2e7d32; font-size: 0.9em;">
-                                ♿ <strong>Irisgarritasuna:</strong> Bideoak azpitituluak ditu (CC).
-                            </p>
-                        </div>
-                    </div>
+
+                <!-- B1.1 LABURPENA -->
+                <div class="bidalketa-card" style="background:#e8f5e9; padding:20px; border-radius:15px; margin-top:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+                    <h3 style="color:#2e7d32; margin-top:0;">📦 B1.1 Lehen Bidalketa: Komunikazioa, Elkarlana eta Netiketa</h3>
+                    <ul style="margin-left:20px; line-height:1.6; font-size:0.95em;">
+                        <li>Komunikazio kanal egokiak eta helburuak identifikatzea.</li>
+                        <li>Elkarlan tresnak: Drive, GitHub, eta antolaketa praktikak.</li>
+                        <li>Netiketa arauen infografia bisuala eta arau nagusiak.</li>
+                    </ul>
+                    <a href="bidalketa1.html" style="display:inline-block; margin-top:10px; background:#2e7d32; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">🔍 Ikusi Bidalketa 1</a>
                 </div>
-                
-                <div class="bidalketa-card" style="background: #e3f2fd; margin-top: 30px;">
-                    <h3 style="color: #1565c0;">📦 Bigarren Bidalketa (B1.2)</h3>
-                    <p style="margin-bottom: 10px;"><strong>Gaia:</strong> Adimen Artifiziala - Ikusmeneko Sistemak (Computer Vision)</p>
-                    <p style="margin-bottom: 15px; color: #666;">Ezagutza mailaren araberako eduki digitalen ebidentziatzea</p>
-                    
-                    <div class="ataza-grid">
-                        <div class="ataza-box" style="border-color: #42a5f5;">
-                            <div class="emoji">📝</div>
-                            <h4>4.A Aurre-Ebaluazioa</h4>
-                            <p>Google Forms + Dinamika</p>
-                        </div>
-                        
-                        <div class="ataza-box" style="border-color: #64b5f6;">
-                            <div class="emoji">📚</div>
-                            <h4>2.A Oinarrizko Edukia</h4>
-                            <p>Prezentazio interaktiboa</p>
-                        </div>
-                        
-                        <div class="ataza-box" style="border-color: #90caf9;">
-                            <div class="emoji">🚀</div>
-                            <h4>2.B Eduki Aurreratua</h4>
-                            <p>Jupyter Notebooks + GitHub</p>
-                        </div>
-                    </div>
-                    
-                    <div style="background: white; padding: 20px; border-radius: 10px; margin-top: 20px;">
-                        <h4 style="color: #1565c0; margin-bottom: 15px;">📊 PowerPoint Aurkezpena</h4>
-                        <p style="color: #666; margin-bottom: 15px;">Deep Computer Vision - 12 diapositiba</p>
-                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                            <a href="https://docs.google.com/presentation/d/1mWXg933T77FoVqETz7BqCbqY_9r3HJeA/edit?usp=sharing&ouid=115862801143979037014&rtpof=true&sd=true" 
-                               target="_blank"
-                               style="display: inline-block; padding: 10px 20px; background: #0277bd; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-                                📊 Ikusi Google Drive-n
-                            </a>
-                            <a href="Deep_Computer_Vision_Proiektuak/Deep_Computer_Vision_Aurkezpena.pptx" 
-                               download
-                               style="display: inline-block; padding: 10px 20px; background: #4caf50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
-                                📥 Deskargatu PPT
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div style="background: #e1f5fe; padding: 20px; border-radius: 10px; margin-top: 20px;">
-                        <h4 style="color: #0277bd; margin-bottom: 10px;">🎥 Bideo Azalpena</h4>
-                        <p style="color: #666; margin-bottom: 15px;">
-                            Bigarren bidalketaren eduki guztiak (2.A eta 2.B) azaltzen ditut
-                        </p>
-                        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 700px; margin: 0 auto;">
-                            <iframe 
-                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);"
-                                src="https://www.youtube.com/embed/tGlLE_YwyNQ?cc_load_policy=1&hl=eu" 
-                                title="Portfolio Digital B1 - Bigarren Bidalketa" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                allowfullscreen>
-                            </iframe>
-                        </div>
-                        <div style="margin-top: 10px; padding: 10px; background: #e8f5e9; border-left: 4px solid #4caf50; border-radius: 4px;">
-                            <p style="margin: 0; color: #2e7d32; font-size: 0.9em;">
-                                ♿ <strong>Irisgarritasuna:</strong> Bideoak azpitituluak ditu (CC).
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div style="text-align: center; margin-top: 25px;">
-                        <a href="bidalketa2.html" style="display: inline-block; padding: 15px 40px; background: #1976d2; color: white; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 1.1em; box-shadow: 0 4px 10px rgba(25,118,210,0.3); transition: all 0.3s;">
-                            📖 Ikusi Bigarren Bidalketa Osoa →
-                        </a>
-                    </div>
+
+                <!-- B1.2 LABURPENA -->
+                <div class="bidalketa-card" style="background:#e3f2fd; padding:20px; border-radius:15px; margin-top:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+                    <h3 style="color:#1565c0; margin-top:0;">📦 B1.2 Bigarren Bidalketa: Ezagutza Mailaren Araberako Edukiak</h3>
+                    <ul style="margin-left:20px; line-height:1.6; font-size:0.95em;">
+                        <li>Aurre-ebaluazioa ikasleen hasierako maila jasotzeko.</li>
+                        <li>Oinarrizko kontzeptuak: pixelak, RGB, lehen CNN ereduak.</li>
+                        <li>Eduki aurreratuak: Transfer Learning, Objektu Detekzioa (YOLO), Aurpegi Ezagutza.</li>
+                        <li>9 Jupyter Notebook + PPT aurkezpena (ikaskuntza progresiboa).</li>
+                    </ul>
+                    <a href="bidalketa2.html" style="display:inline-block; margin-top:10px; background:#1565c0; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">🔍 Ikusi Bidalketa 2</a>
                 </div>
-                
-                <div class="task-card" style="margin-top: 30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-                    <h3 style="color: white;">🎯 Helburua</h3>
-                    <p style="font-size: 1.05em;">
-                        Portfolio honek irakaslearen gaitasun digitalak erakusten ditu, tresna desberdinak erabiliz eta eduki digitalak sortuz ezagutza maila desberdinek ikasteko.
-                    </p>
+
+                <!-- B1.3 LABURPENA -->
+                <div class="bidalketa-card" style="background:#f3e5f5; padding:20px; border-radius:15px; margin-top:25px; box-shadow:0 4px 12px rgba(0,0,0,0.08);">
+                    <h3 style="color:#6a1b9a; margin-top:0;">📦 B1.3 Hirugarren Bidalketa: Irisgarritasuna eta Pertsonalizazioa</h3>
+                    <ul style="margin-left:20px; line-height:1.6; font-size:0.95em;">
+                        <li>Irisgarritasun panel dinamikoa: kontraste altua, testu handia, tarte zabalak.</li>
+                        <li>Audio irakurketa sistema bateratua (ahots kudeaketa, hizkuntza aldaketa, pausatu/berrekin).</li>
+                        <li>Ikaskuntza pertsonalizatua: aztarna digitalaren araberako edukien egokitzapena.</li>
+                        <li>Erabiltzaile esperientzia inklusibo eta moldagarria.</li>
+                    </ul>
+                    <a href="bidalketa3.html" style="display:inline-block; margin-top:10px; background:#6a1b9a; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600;">🔍 Ikusi Bidalketa 3</a>
+                </div>
+
+                <!-- Helburu Orokorra -->
+                <div class="task-card" style="margin-top:30px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                    <h3 style="color:white;">🎯 Helburu Orokorra</h3>
+                    <p style="font-size:1.05em;">Portfolioak gaitasun digitalen aplikazio praktikoa erakusten du: <strong>eduki egokitzapena</strong>, <strong>irisgarritasuna</strong> eta <strong>ikaskuntza aktiboa</strong> uztartuz.</p>
                 </div>
             </section>
         </div>
@@ -318,187 +174,7 @@
         });
     </script>
     
-    <!-- AUDIO READER SCRIPT / IRAKURKETA AUDIO SCRIPT -->
-    <script>
-        let isReading = false;
-        let isPaused = false;
-        let utterance = null;
-        let currentIndex = 0;
-        let contentElements = [];
-        let availableVoices = [];
-        let selectedLanguage = 'es-ES'; // Por defecto español
-        
-        // Cargar voces disponibles
-        function loadVoices() {
-            availableVoices = window.speechSynthesis.getVoices();
-            console.log('Voces disponibles:', availableVoices.map(v => v.lang + ' - ' + v.name));
-            
-            // Actualizar opciones del selector basadas en voces disponibles
-            updateLanguageOptions();
-        }
-        
-        // Actualizar opciones de idioma disponibles
-        function updateLanguageOptions() {
-            const select = document.getElementById('languageSelect');
-            const hasBasque = availableVoices.some(v => v.lang.startsWith('eu'));
-            const hasEnglish = availableVoices.some(v => v.lang.startsWith('en'));
-            const hasFrench = availableVoices.some(v => v.lang.startsWith('fr'));
-            
-            // Deshabilitar opciones no disponibles
-            Array.from(select.options).forEach(option => {
-                const lang = option.value.substring(0, 2);
-                if (lang === 'eu' && !hasBasque) {
-                    option.disabled = true;
-                    option.text += ' (Ez dago erabilgarri)';
-                }
-            });
-        }
-        
-        // Cargar voces al inicio
-        if (speechSynthesis.onvoiceschanged !== undefined) {
-            speechSynthesis.onvoiceschanged = loadVoices;
-        }
-        loadVoices();
-        
-        // Abrir panel de audio
-        function openAudioPanel() {
-            document.getElementById('audioReaderPanel').style.display = 'block';
-            document.getElementById('audioReaderBtn').style.display = 'none';
-        }
-        
-        // Cerrar panel de audio
-        function closeAudioPanel() {
-            stopAudioReader();
-            document.getElementById('audioReaderPanel').style.display = 'none';
-            document.getElementById('audioReaderBtn').style.display = 'block';
-        }
-        
-        // Cambiar idioma
-        function changeLanguage() {
-            selectedLanguage = document.getElementById('languageSelect').value;
-            console.log('Idioma seleccionado:', selectedLanguage);
-            
-            // Si está leyendo, reiniciar con el nuevo idioma
-            if (isReading) {
-                stopAudioReader();
-                setTimeout(startAudioReader, 100);
-            }
-        }
-        
-        // Toggle Play/Pause
-        function togglePlayPause() {
-            const btn = document.getElementById('playPauseBtn');
-            
-            if (!isReading) {
-                // Iniciar lectura
-                startAudioReader();
-                btn.textContent = '⏸️ Pause';
-                btn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
-                isReading = true;
-                isPaused = false;
-            } else if (isPaused) {
-                // Reanudar
-                window.speechSynthesis.resume();
-                btn.textContent = '⏸️ Pause';
-                isPaused = false;
-            } else {
-                // Pausar
-                window.speechSynthesis.pause();
-                btn.textContent = '▶️ Play';
-                isPaused = true;
-            }
-        }
-        
-        function startAudioReader() {
-            // Asegurarse de que las voces estén cargadas
-            if (availableVoices.length === 0) {
-                loadVoices();
-            }
-            
-            // Lortu eduki guztiak / Obtener todo el contenido
-            const content = document.querySelector('.content');
-            contentElements = Array.from(content.querySelectorAll('h2, h3, h4, p, li'))
-                .filter(el => {
-                    // Filtratu elementu hutsak eta irudiak / Filtrar elementos vacíos e imágenes
-                    const text = el.textContent.trim();
-                    return text.length > 0 && !el.querySelector('img') && !el.classList.contains('badge');
-                });
-            
-            currentIndex = 0;
-            readNextElement();
-        }
-        
-        function readNextElement() {
-            if (currentIndex >= contentElements.length || !isReading) {
-                stopAudioReader();
-                return;
-            }
-            
-            const element = contentElements[currentIndex];
-            const text = element.textContent.trim();
-            
-            // Nabarmendu irakurtzen ari den elementua / Resaltar elemento que se está leyendo
-            element.style.backgroundColor = '#fff3cd';
-            element.style.transition = 'background-color 0.3s';
-            
-            // Sortu utterance / Crear utterance
-            utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = selectedLanguage;
-            utterance.rate = 0.85; // Abiadura / Velocidad (más lento para mejor comprensión)
-            utterance.pitch = 1;
-            utterance.volume = 1;
-            
-            // Intentar usar la mejor voz disponible
-            const voice = availableVoices.find(v => v.lang === selectedLanguage) || 
-                         availableVoices.find(v => v.lang.startsWith(selectedLanguage.substring(0, 2))) ||
-                         availableVoices[0];
-            if (voice) {
-                utterance.voice = voice;
-            }
-            
-            // Amaiera kudeatzea / Manejar finalización
-            utterance.onend = function() {
-                element.style.backgroundColor = '';
-                currentIndex++;
-                setTimeout(readNextElement, 100); // Pequeña pausa entre elementos
-            };
-            
-            // Errorea kudeatzea / Manejar error
-            utterance.onerror = function(event) {
-                console.error('Speech synthesis error:', event);
-                element.style.backgroundColor = '';
-                currentIndex++;
-                readNextElement();
-            };
-            
-            // Hasi irakurketa / Iniciar lectura
-            window.speechSynthesis.speak(utterance);
-        }
-        
-        function stopAudioReader() {
-            window.speechSynthesis.cancel();
-            isReading = false;
-            isPaused = false;
-            currentIndex = 0;
-            
-            // Kendu nabarmentze guztiak / Quitar todos los resaltados
-            contentElements.forEach(el => {
-                if (el && el.style) {
-                    el.style.backgroundColor = '';
-                }
-            });
-            
-            const btn = document.getElementById('playPauseBtn');
-            if (btn) {
-                btn.textContent = '▶️ Play';
-                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-            }
-        }
-        
-        // Gelditu irakurketa orria itxi aurretik / Detener lectura antes de cerrar la página
-        window.addEventListener('beforeunload', function() {
-            stopAudioReader();
-        });
-    </script>
+    <!-- AUDIO READER UNIFIED SCRIPT -->
+    <script src="audioReader.js"></script>
 </body>
 </html>

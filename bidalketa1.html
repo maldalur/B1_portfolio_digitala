@@ -20,62 +20,6 @@
             <a href="bidalketa3.html">📦 B1.3 Hirugarren Bidalketa</a>
         </nav>
         
-        <!-- IRAKURKETA MODUA / MODO LECTURA POR VOZ -->
-        <div id="audioReaderPanel" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: none;">
-            <div style="margin-bottom: 10px;">
-                <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #667eea;">🌐 Hizkuntza / Idioma:</label>
-                <select id="languageSelect" onchange="changeLanguage()" style="width: 100%; padding: 8px; border: 2px solid #667eea; border-radius: 8px; font-size: 14px; cursor: pointer;">
-                    <option value="es-ES">🇪🇸 Español</option>
-                    <option value="eu-ES">🇪🇺 Euskara</option>
-                    <option value="en-US">🇬🇧 English</option>
-                    <option value="fr-FR">🇫🇷 Français</option>
-                </select>
-            </div>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <button id="playPauseBtn" onclick="togglePlayPause()" 
-                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                               color: white; 
-                               border: none; 
-                               border-radius: 10px; 
-                               padding: 10px 20px; 
-                               font-size: 20px; 
-                               cursor: pointer; 
-                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                               transition: all 0.3s ease;">
-                    ▶️ Play
-                </button>
-                <button onclick="closeAudioPanel()" 
-                        style="background: #dc3545; 
-                               color: white; 
-                               border: none; 
-                               border-radius: 10px; 
-                               padding: 10px 20px; 
-                               font-size: 14px; 
-                               cursor: pointer; 
-                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-                               transition: all 0.3s ease;">
-                    ❌ Itxi
-                </button>
-            </div>
-        </div>
-        
-        <!-- Botón flotante para abrir el panel -->
-        <div style="position: fixed; bottom: 20px; left: 20px; z-index: 999;">
-            <button id="audioReaderBtn" onclick="openAudioPanel()" 
-                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                           color: white; 
-                           border: none; 
-                           border-radius: 50%; 
-                           width: 60px; 
-                           height: 60px; 
-                           font-size: 24px; 
-                           cursor: pointer; 
-                           box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-                           transition: all 0.3s ease;">
-                🔊
-            </button>
-        </div>
-        
         <div class="content">
             <!-- SARRERA -->
             <section>
@@ -134,37 +78,25 @@
                         </div>
                         
                         <div class="tool-item">
-                            <h4>💬 Google Chat Taldea</h4>
-                            <span class="badge">Informala</span>
-                            <p>Eguneroko komunikazio azkarra. Galdera laburrak eta abisu azkarrak kanal antolatuetan.</p>
+                            <h4>💬 Microsoft Teams</h4>
+                            <span class="badge">Lana</span>
+                            <p>Lan taldeko komunikazioa, bideo deiak, dokumentuak partekatzea.</p>
                         </div>
                         
                         <div class="tool-item">
-                            <h4>🎥 Google Meet</h4>
-                            <span class="badge">Ofiziala</span>
-                            <span class="badge">Bideokonferentziak</span>
-                            <p>Bilerak online egiteko. Pantaila partekatzea, txata eta fitxategiak partekatzea.</p>
+                            <h4>🎓 Google Classroom</h4>
+                            <span class="badge">Hezkuntza</span>
+                            <p>Ikasleekiko komunikazioa, ariketak, ebaluazioak, ikasmaterialak.</p>
                         </div>
-                        
-                        <div class="tool-item">
-                            <h4>📢 Moodle Foroa</h4>
-                            <span class="badge">Akademikoa</span>
-                            <p>Ikasle eta irakasleen arteko komunikazioa. Galderak eta erantzunak.</p>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 30px; padding: 20px; background: #e8f4f8; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa</h4>
-                        <p style="font-size: 1.05em; line-height: 1.8;"><strong>Tresna hauek komunikazioa bermatzeko balio dute</strong> hainbat motatako komunikazio beharretarako: formala (Gmail, Google Meet), informala (Google Chat), eta akademikoa (Moodle). Horrela, informazioa azkar eta eraginkortasunez heltzen da irakasle talde osora.</p>
                     </div>
                 </div>
                 
                 <div class="task-card" style="background: #e8f5e9;">
                     <h3 style="color: #2e7d32;">✅ Lorpen Adierazlea</h3>
                     <p style="font-size: 1.05em;">
-                        <strong>"Martxan jarritako tresna digitalek irakasle taldean komunikazioa bermatzeko balio dutela argudiatzen da"</strong>
+                        <strong>"Komunikaziorako testuinguru egokia identifikatu da"</strong>
                     </p>
-                    <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> Tresna desberdinak identifikatu dira eta haien erabilera argudiatzen da.</p>
+                    <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> Komunikazio kanalak beren helburu eta testuinguru egokiarekin identifikatu dira.</p>
                 </div>
             </section>
 
@@ -174,64 +106,39 @@
                 
                 <div class="task-card">
                     <h3>🎯 Helburua</h3>
-                    <p>Gure irakasle taldean elkarlanean lan egiteko erabiltzen ditugun kanal eta tresna digitalak erakustea.</p>
+                    <p>Ikasleekiko elkarlana bultzatzeko tresnak identifikatzea eta erabiltzen ikastea.</p>
                 </div>
                 
                 <div class="task-card">
-                    <h3>🔧 Erabiltzen ditugun Elkarlana Tresnak</h3>
+                    <h3>🔧 Erabiltzen ditugun Elkarlan Tresnak</h3>
                     
                     <div class="tool-grid">
                         <div class="tool-item">
-                            <h4>☁️ Google Drive</h4>
-                            <span class="badge">Dokumentuak</span>
-                            <span class="badge">Denbera errealean</span>
-                            <p>Dokumentuak, kalkulu-orriak eta aurkezpenak partekatzeko eta batera editatzeko. Bertsio-kontrola denbera errealean.</p>
+                            <h4>📂 Google Drive</h4>
+                            <span class="badge">Cloud</span>
+                            <p>Dokumentuak partekatzea, batera editatzea, aldaketa jarraipena.</p>
                         </div>
                         
                         <div class="tool-item">
-                            <h4>📊 Google Drive (Unitate partekatuak)</h4>
-                            <span class="badge">Fitxategiak</span>
-                            <p>Fitxategi handiak partekatzeko eta karpeta egituratu batean antolatzeko. Sarbide kontrol zehatza eta taldeko kudeaketa.</p>
+                            <h4>🐙 GitHub</h4>
+                            <span class="badge">Kodea</span>
+                            <p>Kode kontrola, bertsio kudeaketa, proiektuen kudeaketa.</p>
                         </div>
                         
                         <div class="tool-item">
-                            <h4>📝 Padlet</h4>
-                            <span class="badge">Ideiak</span>
-                            <span class="badge">Adibururruak</span>
-                            <p>Ideia-adibururruetarako. Informazio bisual eta interaktiboa partekatzeko.</p>
-                        </div>
-                        
-                        <div class="tool-item">
-                            <h4>📅 Google Calendar</h4>
+                            <h4>📋 Trello</h4>
                             <span class="badge">Antolaketa</span>
-                            <p>Bilera eta gertakari partekatuak antolatzeko. Gogorarazpenak eta abisu automatikoak.</p>
+                            <p>Ataza kudeaketa, egin beharrekoen zerrenda, lan fluxuaren bisualizazioa.</p>
                         </div>
-                        
-                        <div class="tool-item">
-                            <h4>🎯 Trello</h4>
-                            <span class="badge">Proiektuak</span>
-                            <p>Proiektuen kudeaketa. Zereginen banaketa eta jarraipena egiteko.</p>
-                        </div>
-                        
-                        <div class="tool-item">
-                            <h4>📚 Moodle</h4>
-                            <span class="badge">Edukiak</span>
-                            <p>Irakasgaien edukiak eta materialak partekatzeko. Zereginak eta azterketen kudeaketa.</p>
-                        </div>
-                    </div>
-                    
-                    <div style="margin-top: 30px; padding: 20px; background: #f0f8e8; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">💡 Argudioa</h4>
-                        <p style="font-size: 1.05em; line-height: 1.8;"><strong>Tresna hauek informazioa, edukiak partekatzeko eta elkarlanean elkar eragiteko balio dute.</strong> Horrela, irakasle taldea modu koordinatuan lan egin dezake, dokumentuak batera editatu, erantzukizunak banatu, eta proiektuen jarraipena egin denbera errealean. Elkarlana errazten dute eta eraginkortasuna hobetzen dute.</p>
                     </div>
                 </div>
                 
                 <div class="task-card" style="background: #e8f5e9;">
                     <h3 style="color: #2e7d32;">✅ Lorpen Adierazlea</h3>
                     <p style="font-size: 1.05em;">
-                        <strong>"Martxan jarritako tresna digitalek irakasle taldean informazioa, edukiak partekatzeko eta elkarlanean elkar eragiteko balio dutela argudiatzen da"</strong>
+                        <strong>"Elkarlanerako testuinguru egokia identifikatu da"</strong>
                     </p>
-                    <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> Tresna desberdinak identifikatu dira eta elkarlana nola errazten duten argudiatzen da.</p>
+                    <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> Elkarlan tresnak beren funtzionalitateekin identifikatu dira.</p>
                 </div>
             </section>
 
@@ -241,36 +148,35 @@
                 
                 <div class="task-card">
                     <h3>🎯 Helburua</h3>
-                    <p>Gure irakasle taldearen lan testuingururako Netiketa arauak ezartzea eta infografia batean islatzea.</p>
+                    <p>Sare sozialetan eta komunikazio digitalean errespetuzko eta egokia den jarduera sustatzea.</p>
                 </div>
                 
                 <div class="infographic">
-                    <h3>🎯 GURE NETIKETA ARAUAK</h3>
-                    <p style="color: #666; margin-bottom: 30px;">Komunikazio digitalean errespetuz aritzeko gidalerroak</p>
+                    <h3 style="text-align: center; color: #667eea; margin-bottom: 30px;">📱 NETIKETA ARAUAK - Sare Sozialak eta Komunikazio Digitala</h3>
                     
-                    <div class="netiquette-rules">
+                    <div class="netiquette-grid">
                         <div class="rule-card">
                             <h4>
                                 <span class="rule-number">1</span>
                                 <span>Errespetua</span>
                             </h4>
-                            <p>Beti errespetuz eta adeitasunez tratatu kideak. Saihestu iraingarriak edo erasotzaileak diren mezuak.</p>
+                            <p>Idatzi beste pertsonekin hitz egingo bazenu bezala. Errespetatu iritziak nahiz eta adostzen ez bazara.</p>
                         </div>
                         
                         <div class="rule-card">
                             <h4>
                                 <span class="rule-number">2</span>
-                                <span>Argitasuna</span>
+                                <span>Pribatutasuna</span>
                             </h4>
-                            <p>Idatzi modu argi eta zuzenean. Erabili letra larriak ulergarritasuna hobetzeko, ez oihukateko.</p>
+                            <p>Ez partekatu beste pertsonen informazio pertsonala baimenik gabe. Zaindu zure datuak ere.</p>
                         </div>
                         
                         <div class="rule-card">
                             <h4>
                                 <span class="rule-number">3</span>
-                                <span>Pribatutasuna</span>
+                                <span>Jarduera Positiboa</span>
                             </h4>
-                            <p>Errespetatu besteen pribatutasuna. Ez partekatu informazio pertsonala edo sentikorra baimenik gabe.</p>
+                            <p>Ekidin cyberbullying-a, irainak eta edukin desegokia. Baldin arazorik ikusten baduzu, salatu ezazu.</p>
                         </div>
                         
                         <div class="rule-card">
@@ -464,160 +370,7 @@
         });
     </script>
     
-    <!-- AUDIO READER SCRIPT / IRAKURKETA AUDIO SCRIPT -->
-    <script>
-        let isReading = false;
-        let isPaused = false;
-        let utterance = null;
-        let currentIndex = 0;
-        let contentElements = [];
-        let availableVoices = [];
-        let selectedLanguage = 'es-ES';
-        
-        function loadVoices() {
-            availableVoices = window.speechSynthesis.getVoices();
-            console.log('Voces disponibles:', availableVoices.map(v => v.lang + ' - ' + v.name));
-            updateLanguageOptions();
-        }
-        
-        function updateLanguageOptions() {
-            const select = document.getElementById('languageSelect');
-            const hasBasque = availableVoices.some(v => v.lang.startsWith('eu'));
-            
-            Array.from(select.options).forEach(option => {
-                const lang = option.value.substring(0, 2);
-                if (lang === 'eu' && !hasBasque) {
-                    option.disabled = true;
-                    option.text += ' (Ez dago erabilgarri)';
-                }
-            });
-        }
-        
-        if (speechSynthesis.onvoiceschanged !== undefined) {
-            speechSynthesis.onvoiceschanged = loadVoices;
-        }
-        loadVoices();
-        
-        function openAudioPanel() {
-            document.getElementById('audioReaderPanel').style.display = 'block';
-            document.getElementById('audioReaderBtn').style.display = 'none';
-        }
-        
-        function closeAudioPanel() {
-            stopAudioReader();
-            document.getElementById('audioReaderPanel').style.display = 'none';
-            document.getElementById('audioReaderBtn').style.display = 'block';
-        }
-        
-        function changeLanguage() {
-            selectedLanguage = document.getElementById('languageSelect').value;
-            console.log('Idioma seleccionado:', selectedLanguage);
-            
-            if (isReading) {
-                stopAudioReader();
-                setTimeout(startAudioReader, 100);
-            }
-        }
-        
-        function togglePlayPause() {
-            const btn = document.getElementById('playPauseBtn');
-            
-            if (!isReading) {
-                startAudioReader();
-                btn.textContent = '⏸️ Pause';
-                btn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
-                isReading = true;
-                isPaused = false;
-            } else if (isPaused) {
-                window.speechSynthesis.resume();
-                btn.textContent = '⏸️ Pause';
-                isPaused = false;
-            } else {
-                window.speechSynthesis.pause();
-                btn.textContent = '▶️ Play';
-                isPaused = true;
-            }
-        }
-        
-        function startAudioReader() {
-            if (availableVoices.length === 0) {
-                loadVoices();
-            }
-            
-            const content = document.querySelector('.content');
-            contentElements = Array.from(content.querySelectorAll('h2, h3, h4, p, li'))
-                .filter(el => {
-                    const text = el.textContent.trim();
-                    return text.length > 0 && !el.querySelector('img') && !el.classList.contains('badge');
-                });
-            
-            currentIndex = 0;
-            readNextElement();
-        }
-        
-        function readNextElement() {
-            if (currentIndex >= contentElements.length || !isReading) {
-                stopAudioReader();
-                return;
-            }
-            
-            const element = contentElements[currentIndex];
-            const text = element.textContent.trim();
-            
-            element.style.backgroundColor = '#fff3cd';
-            element.style.transition = 'background-color 0.3s';
-            
-            utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = selectedLanguage;
-            utterance.rate = 0.85;
-            utterance.pitch = 1;
-            utterance.volume = 1;
-            
-            const voice = availableVoices.find(v => v.lang === selectedLanguage) || 
-                         availableVoices.find(v => v.lang.startsWith(selectedLanguage.substring(0, 2))) ||
-                         availableVoices[0];
-            if (voice) {
-                utterance.voice = voice;
-            }
-            
-            utterance.onend = function() {
-                element.style.backgroundColor = '';
-                currentIndex++;
-                setTimeout(readNextElement, 100);
-            };
-            
-            utterance.onerror = function(event) {
-                console.error('Speech synthesis error:', event);
-                element.style.backgroundColor = '';
-                currentIndex++;
-                readNextElement();
-            };
-            
-            window.speechSynthesis.speak(utterance);
-        }
-        
-        function stopAudioReader() {
-            window.speechSynthesis.cancel();
-            isReading = false;
-            isPaused = false;
-            currentIndex = 0;
-            
-            contentElements.forEach(el => {
-                if (el && el.style) {
-                    el.style.backgroundColor = '';
-                }
-            });
-            
-            const btn = document.getElementById('playPauseBtn');
-            if (btn) {
-                btn.textContent = '▶️ Play';
-                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
-            }
-        }
-        
-        window.addEventListener('beforeunload', function() {
-            stopAudioReader();
-        });
-    </script>
+    <!-- AUDIO READER UNIFIED SCRIPT -->
+    <script src="audioReader.js"></script>
 </body>
 </html>
