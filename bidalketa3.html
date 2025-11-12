@@ -234,72 +234,166 @@
 
             <!-- 5.B ATAZA: PERTSONALIZAZIOA -->
             <section id="pertsonalizazioa">
-                <h2>🎯 5.B Ataza: Ikaskuntza Pertsonalizazioa</h2>
+                <h2>🎯 5.B Ataza: Aztarna Digitalaren Araberako Ikaskuntza Pertsonalizazioa</h2>
                 
                 <div class="task-card">
                     <h3>🎯 Helburua</h3>
-                    <p>Ikasleen aztarna digitala erabiliz, ikaskuntza pertsonalizatzeko estrategiak aplikatzea.</p>
+                    <p>Sakontze edukiaren (2.B Deep Computer Vision proiektua) erabilpen datuak aztertu eta ikasleen ikasteko abiaduraren araberako taldeak identifikatzea. Identifikazio hori eginda, talde bakoitzaren ikaskuntza pertsonalizatzeko egokitzapenak proposatzea.</p>
                 </div>
                 
                 <div class="task-card">
-                    <h3>📊 Pertsonalizazio Estrategiak</h3>
+                    <h3>📊 Ikustaldi Kopuruaren Datuen Analisia</h3>
                     
-                    <div style="background: #e3f2fd; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #1976d2; margin-bottom: 15px;">1️⃣ Aurre-Ebaluazioa (4.A Ataza)</h4>
-                        <p style="margin-bottom: 15px;">Google Forms bidez 10 galderako test bat, ikasleen ezagutza maila neurtzeko.</p>
-                        <ul style="margin-left: 20px; line-height: 1.8;">
-                            <li>📊 <strong>Puntuazio sistema:</strong> 0-10 puntu</li>
-                            <li>🔀 <strong>Bideratzea:</strong>
-                                <ul style="margin-left: 20px; margin-top: 10px;">
-                                    <li>0-7 puntu → 2.A Oinarrizko Edukira</li>
-                                    <li>8-10 puntu → 2.B Eduki Aurreratua</li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <p style="margin-bottom: 20px;">25 ikaslek sakontze edukia (Deep Computer Vision Jupyter Notebooks) ikusteko behar izan dituzten <strong>bisita kopurua</strong> honakoa izan da:</p>
+                    
+                    <div style="background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="background: #667eea; color: white;">
+                                    <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">Ikaslea</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Ikustaldiak</th>
+                                    <th style="padding: 12px; text-align: center; border: 1px solid #ddd;">Taldea</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="background: #d4edda;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 1, 3, 4, 5, 13-17, 19, 20, 22</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>2 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🟢 Bizkorra (14 ikasle)</td>
+                                </tr>
+                                <tr style="background: #fff3cd;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 8, 10, 21, 23</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>3 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🟡 Ertaina (4 ikasle)</td>
+                                </tr>
+                                <tr style="background: #fff3cd;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 9, 18</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>4 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🟡 Ertaina (2 ikasle)</td>
+                                </tr>
+                                <tr style="background: #ffeeba;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 2, 7</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>5 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🟠 Motela (2 ikasle)</td>
+                                </tr>
+                                <tr style="background: #ffeeba;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 25</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>6 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🟠 Motela (1 ikasle)</td>
+                                </tr>
+                                <tr style="background: #f8d7da;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 12, 24</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>10-11 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🔴 Oso Motela (2 ikasle)</td>
+                                </tr>
+                                <tr style="background: #f8d7da;">
+                                    <td style="padding: 10px; border: 1px solid #ddd;">Ikasle 6, 11</td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;"><strong>15-42 ikustaldi</strong></td>
+                                    <td style="padding: 10px; text-align: center; border: 1px solid #ddd;">🔴 Zailtasun Handiak (2 ikasle)</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                     
-                    <div style="background: #f3e5f5; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-                        <h4 style="color: #7b1fa2; margin-bottom: 15px;">2️⃣ Bi Eduki Maila</h4>
-                        <p style="margin-bottom: 15px;">Ezagutza maila desberdinetarako bi eduki sortuta:</p>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 15px;">
-                            <div style="background: white; padding: 15px; border-radius: 8px;">
-                                <h5 style="color: #28a745;">📚 2.A Oinarrizko Edukia</h5>
-                                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.6;">
-                                    <li>Kontzeptu oinarrizkoak</li>
-                                    <li>Adibide sinpleak</li>
-                                    <li>Pauso-pausoko azalpenak</li>
-                                    <li>H5P Jarduera interaktiboak</li>
-                                </ul>
-                            </div>
-                            <div style="background: white; padding: 15px; border-radius: 8px;">
-                                <h5 style="color: #dc3545;">🚀 2.B Eduki Aurreratua</h5>
-                                <ul style="margin-left: 20px; margin-top: 10px; line-height: 1.6;">
-                                    <li>Kontzeptu aurreratuak</li>
-                                    <li>Kasu praktiko konplexuak</li>
-                                    <li>Praktikak Jupyter Notebook-ekin</li>
-                                    <li>Proiektu errealistak</li>
-                                </ul>
-                            </div>
+                    <div style="background: #e3f2fd; padding: 20px; border-radius: 10px; margin-bottom: 20px;">
+                        <h4 style="color: #1976d2; margin-bottom: 15px;">📈 Datuen Ondorioak</h4>
+                        <ul style="margin-left: 20px; line-height: 1.8;">
+                            <li>🟢 <strong>Talde Bizkorra (56%):</strong> 14 ikasle (2 ikustaldi). Edukia modu errazean ulertzen dute, aurreragoko erronkak behar dituzte.</li>
+                            <li>🟡 <strong>Talde Ertaina (24%):</strong> 6 ikasle (3-4 ikustaldi). Ohiko erritmoa, edukia egokia da.</li>
+                            <li>🟠 <strong>Talde Motela (12%):</strong> 3 ikasle (5-6 ikustaldi). Denbora gehiago behar dute, laguntza osagarria komeni da.</li>
+                            <li>🔴 <strong>Talde Oso Motela (8%):</strong> 2 ikasle (10-11 ikustaldi). Zailtasun nabarmenak, laguntza pertsonalizatua behar dute.</li>
+                            <li>🔴 <strong>Zailtasun Handiak (8%):</strong> 2 ikasle (15-42 ikustaldi). Kontzeptuak ulertzeko arazoak, oinarrizko edukira itzuli behar dira.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="task-card">
+                    <h3>🔧 Proposatutako Egokitzapenak</h3>
+                    
+                    <div style="background: #d4edda; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #28a745;">
+                        <h4 style="color: #155724; margin-bottom: 15px;">🟢 Talde Bizkorra (14 ikasle - 2 ikustaldi)</h4>
+                        <p style="margin-bottom: 15px;"><strong>Diagnosi:</strong> Ikasle hauek kontzeptuak azkar ulertzen dituzte. Eduki gehiago eta erronka zailtasun handiagokoak behar dituzte.</p>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <h5 style="color: #28a745; margin-bottom: 10px;">Egokitzapenak:</h5>
+                            <ul style="margin-left: 20px; line-height: 1.8;">
+                                <li>➕ <strong>Eduki aurreratuagoak gehitu:</strong> 
+                                    <ul style="margin-left: 20px; margin-top: 5px;">
+                                        <li>GANs (Generative Adversarial Networks) sarrera</li>
+                                        <li>Semantic Segmentation proiektuak</li>
+                                        <li>Real-time Computer Vision aplikazioak</li>
+                                    </ul>
+                                </li>
+                                <li>🏆 <strong>Erronka proiektuak:</strong> Kaggle lehiaketetara bideratu (adibidez: ImageNet klasifikazioa, objektu detekzio konplexua)</li>
+                                <li>👥 <strong>Peer mentoring:</strong> Talde moteleago batzuei laguntzeko tutoretza-rol bat esleitu</li>
+                                <li>📚 <strong>Artikulu zientifikoak:</strong> Research papers irakurtzeko proposamenak (ResNet, YOLO, Mask R-CNN...)</li>
+                            </ul>
                         </div>
                     </div>
                     
-                    <div style="background: #fff3cd; padding: 20px; border-radius: 10px;">
-                        <h4 style="color: #856404; margin-bottom: 15px;">3️⃣ Jarraipena eta Feedback-a</h4>
-                        <p style="margin-bottom: 15px;">Kahoot dinamika bat ezagutza ziurtatzeko eta motibatzeko:</p>
-                        <ul style="margin-left: 20px; line-height: 1.8;">
-                            <li>🎮 <strong>Kahoot jokoa:</strong> Ikasitako kontzeptuak berrikusteko</li>
-                            <li>📈 <strong>Emaitza analisia:</strong> Zailtasun guneak identifikatzeko</li>
-                            <li>🔄 <strong>Egokitzapena:</strong> Behar izanez gero, edukia egokitzeko</li>
-                        </ul>
+                    <div style="background: #fff3cd; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #ffc107;">
+                        <h4 style="color: #856404; margin-bottom: 15px;">🟡 Talde Ertaina (6 ikasle - 3-4 ikustaldi)</h4>
+                        <p style="margin-bottom: 15px;"><strong>Diagnosi:</strong> Erritmoa egokia da, edukia ondo egokituta dago talde honentzat.</p>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <h5 style="color: #856404; margin-bottom: 10px;">Egokitzapenak:</h5>
+                            <ul style="margin-left: 20px; line-height: 1.8;">
+                                <li>✅ <strong>Eduki aktuala mantendu:</strong> Ez da aldaketa handirik behar</li>
+                                <li>📝 <strong>Praktika gehigarriak:</strong> Aukerako ariketak praktika gehiago nahi dutenentzat</li>
+                                <li>💬 <strong>Eztabaida foroak:</strong> Zalantzak partekatzeko eta elkar laguntzeko espazioak sortu</li>
+                                <li>🎯 <strong>Autoebaluazioak:</strong> Quiz-ak kontzeptuak sendotzeko</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #ffeeba; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #ff9800;">
+                        <h4 style="color: #e65100; margin-bottom: 15px;">🟠 Talde Motela (3 ikasle - 5-6 ikustaldi)</h4>
+                        <p style="margin-bottom: 15px;"><strong>Diagnosi:</strong> Zailtasun moderatuak dituzte. Laguntza osagarria eta azalpen gehiago behar dituzte.</p>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <h5 style="color: #e65100; margin-bottom: 10px;">Egokitzapenak:</h5>
+                            <ul style="margin-left: 20px; line-height: 1.8;">
+                                <li>📹 <strong>Bideo azalpen gehigarriak:</strong> Kontzeptu zailenak bideo laburretan azaldu (5-10 min)</li>
+                                <li>📝 <strong>Laburpen eskemak:</strong> Kontzeptu nagusien laburpen bisualak (infografikak, diagrama)</li>
+                                <li>💬 <strong>Tutoretzak:</strong> Astean behin tutoretza saioak eskaintzea zalantzak argitzeko</li>
+                                <li>🤝 <strong>Bikote lana:</strong> Talde bizkorragoko ikasle batekin lana egitea (peer learning)</li>
+                                <li>⏱️ <strong>Denbora gehiago:</strong> Epeak luzatzeko aukera eman</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #f8d7da; padding: 20px; border-radius: 10px; margin-bottom: 20px; border-left: 5px solid #dc3545;">
+                        <h4 style="color: #721c24; margin-bottom: 15px;">🔴 Talde Oso Motela eta Zailtasun Handiak (4 ikasle - 10-42 ikustaldi)</h4>
+                        <p style="margin-bottom: 15px;"><strong>Diagnosi:</strong> Zailtasun nabarmenak. Kontzeptu oinarrizkoak berriz lantzeko beharra dago.</p>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <h5 style="color: #721c24; margin-bottom: 10px;">Egokitzapenak:</h5>
+                            <ul style="margin-left: 20px; line-height: 1.8;">
+                                <li>🔄 <strong>Oinarrizko edukira itzuli:</strong> 2.A oinarrizko edukia berriz ikusi (CNN-en oinarriak, Python oinarriak)</li>
+                                <li>📚 <strong>Material sinplifikatua:</strong> 
+                                    <ul style="margin-left: 20px; margin-top: 5px;">
+                                        <li>Notebook-ak pauso txikiagotan zatitu</li>
+                                        <li>Kode komentario gehiago euskaraz</li>
+                                        <li>Emaitza bisualak gehitu ulermen hobea lortzeko</li>
+                                    </ul>
+                                </li>
+                                <li>👨‍🏫 <strong>Tutoretza indibidualizatua:</strong> Astean 2 saioko laguntza pertsonalizatua</li>
+                                <li>🎮 <strong>Gamifikazioa:</strong> Kahoot, Quizizz bezalako joku interaktiboak kontzeptu oinarrizkoak finkatzeko</li>
+                                <li>� <strong>Progresu jarraipena:</strong> Aste bakoitzean aurrerapen txikiak neurtu eta positiboki baloratzea (feedback positiboa)</li>
+                                <li>🤝 <strong>Laguntza talde txikietan:</strong> 3-4 ikasle talde txikietan lan egitea irakaslearen laguntza zuzenarekin</li>
+                                <li>📝 <strong>Aurre-irakurgaiak:</strong> Hurrengo saioa baino lehen material labur bat irakurtzea (flipped classroom)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="task-card" style="background: #e8f5e9;">
-                    <h3 style="color: #2e7d32;">✅ Lorpen Adierazlea</h3>
-                    <p style="font-size: 1.05em;">
-                        <strong>"Teknologia digitalak erabiliz ikasleak identifikatu eta sailkatu dira"</strong>
+                    <h3 style="color: #2e7d32;">✅ Lorpen Adierazleak</h3>
+                    <p style="font-size: 1.05em; margin-bottom: 15px;">
+                        <strong>1. "Sakontze edukiaren erabilpen datuen analisitik abiaduraren araberako ikasle talde desberdinak era egokian identifikatu dira"</strong>
                     </p>
-                    <p style="margin-top: 10px;">✓ <strong>Betetzen da:</strong> Aurre-ebaluazio sistema bat erabili da ikasleen ezagutza maila neurtzeko eta bideratzeko.</p>
+                    <p style="margin-left: 20px; margin-bottom: 20px;">✓ <strong>Betetzen da:</strong> 5 talde identifikatu dira ikustaldi kopuruaren arabera (Bizkorra, Ertaina, Motela, Oso Motela, Zailtasun Handiak).</p>
+                    
+                    <p style="font-size: 1.05em; margin-bottom: 15px;">
+                        <strong>2. "Ikaskuntza abiadura desberdinetara egokitutako proposamen berria argudiatzen da"</strong>
+                    </p>
+                    <p style="margin-left: 20px;">✓ <strong>Betetzen da:</strong> Talde bakoitzarentzat egokitzapen zehatzak proposatu dira: eduki aurreratuak bizkorrentzat, laguntza osagarriak moteleentzat, eta material sinplifikatua zailtasun handienak dituztenentzat.</p>
                 </div>
             </section>
         </div>
