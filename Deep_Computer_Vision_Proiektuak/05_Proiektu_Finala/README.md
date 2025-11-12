@@ -6,10 +6,14 @@ Ikasitako guztia erabiliz proiektu konplexu bat garatuko dugu.
 
 ## 📓 Notebooks
 
-### 09_Proiektu_Osoa.ipynb
-- Proiektu konplexua ikasitako guztia erabiliz
-- Multi-task learning
-- Model deployment oinarriak
+### 01_Proiektu_Finala_CIFAR10.ipynb
+- ✅ **CIFAR-10 Dataset-a**: 60,000 irudi koloretsuak (32x32, 10 klase)
+- ✅ **Proiektu osoa bateratua**: Data loading, preprocessing, model, training, evaluation
+- ✅ **Custom CNN arkitektura**: Konboluzio geruza anitzak + Batch Normalization + Dropout
+- ✅ **Data Augmentation**: ImageDataGenerator rotazioak, zoom, flip...
+- ✅ **Callback-ak**: EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, TensorBoard
+- ✅ **Ebaluazio zabala**: Accuracy, Loss, Confusion Matrix, Classification Report
+- ✅ **Deployment oinarriak**: Eredua gordetzea eta kargatzea produkziorako
 
 ## 📂 utils.py
 

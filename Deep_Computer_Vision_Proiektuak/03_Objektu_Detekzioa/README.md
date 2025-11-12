@@ -6,15 +6,19 @@ YOLO (You Only Look Once) algoritmoaren bidez objektu-detekzioa denbora errealea
 
 ## 📓 Notebooks
 
-### 05_YOLO_Sarrera.ipynb
-- YOLO algoritmoaren sarrera
-- Objektu-detekzioaren oinarriak
-- Bounding boxes eta confidence scores
+### 01_Objektu_Detekzioa_Sarrera.ipynb
+- ✅ **Objektu Detekzioa vs Klasifikazioa**: Zer desberdintzen diren
+- ✅ **Bounding Boxes**: (x, y, width, height) koordinatuak
+- ✅ **IoU (Intersection over Union)**: Bi bounding box-en overlap neurtzeko
+- ✅ **NMS (Non-Maximum Suppression)**: Bounding box duplikatuak kentzeko
+- ✅ **YOLO arkitektura**: Nola funtzionatzen duen azalpen teorikoa
 
-### 06_Objektu_Detekzio_Proiektua.ipynb
-- YOLOv8 erabiliz objektuak detektatu
-- Bideoan objektuak detektatu
-- Custom objektuak entrenatu
+### 02_YOLO_Praktika.ipynb
+- ✅ **YOLOv8 instalatu eta konfiguratu**: Ultralytics liburutegia
+- ✅ **COCO dataset-a**: 80 objektu klase (pertsonak, autoak, animaliak...)
+- ✅ **Irudietan detekzioa**: Irudi estatikoak prozesatu
+- ✅ **Bideoetan detekzioa**: Bideo fitxategi bat prozesatu frame-z frame
+- ✅ **Denbora errealeko detekzioa**: Webcam-ekin zuzenean objektuak detektatu
 
 ## 📂 test_irudiak/
 

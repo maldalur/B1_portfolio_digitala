@@ -6,15 +6,19 @@ Transfer Learning teknikak erabiliz pre-trained ereduak (ResNet, VGG16) erabiltz
 
 ## 📓 Notebooks
 
-### 03_ResNet_Transfer_Learning.ipynb
-- ResNet50 ereduaren sarrera
-- Transfer Learning kontzeptua
-- Katuen vs. Txakurren sailkapena
+### 01_Transfer_Learning_Sarrera.ipynb
+- ✅ **Transfer Learning kontzeptua**: Zergatik eta noiz erabili
+- ✅ **3 eredu aurreentrenatuen konparaketa**: VGG16 vs ResNet50 vs MobileNetV2
+- ✅ **ImageNet ponderazioak**: 1000 klase aurre-entrenatua
+- ✅ **Geruzen izozpena**: Trainable=False estrategia
+- ✅ **Errendimendu analisia**: Parametroen kopurua, abiadura, accuracy
 
-### 04_VGG16_Fine_Tuning.ipynb
-- VGG16 arkitektura
-- Fine-tuning teknikak
-- Custom dataset-arekin lan egitea
+### 02_Cats_vs_Dogs_Klasifikazioa.ipynb
+- ✅ **Dogs vs Cats dataset-a**: 25,000 irudi (12,500 katu + 12,500 txakur)
+- ✅ **Feature Extraction**: Geruza guztiak izoztuta
+- ✅ **Fine-Tuning**: Azken geruza batzuk berriz entrenatu
+- ✅ **Data Augmentation**: ImageDataGenerator erabiliz
+- ✅ **Emaitzen konparaketa**: Feature Extraction vs Fine-Tuning accuracy
 
 ## 📂 ereduak/
 

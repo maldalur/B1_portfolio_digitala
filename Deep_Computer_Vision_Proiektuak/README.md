@@ -75,26 +75,26 @@ Deep_Computer_Vision_Proiektuak/
 
 ---
 
-## 📓 Jupyter Notebooks Zerrenda
+## 📓 Jupyter Notebooks Zerrenda (9 Notebook)
 
 ### 1️⃣ CNN Oinarriak
-- **01_CNN_Sarrera.ipynb**: CNN-en oinarriak, konboluzioa, pooling
-- **02_Lehen_CNN_Eredua.ipynb**: MNIST dataset-arekin lehen CNN eredua
+- **[01_CNN_Sarrera.ipynb](01_CNN_Oinarriak/01_CNN_Sarrera.ipynb)**: CNN vs MLP, konboluzioa, pooling, feature maps
+- **[02_Lehen_CNN_Eredua.ipynb](01_CNN_Oinarriak/02_Lehen_CNN_Eredua.ipynb)**: MNIST dataset-arekin CNN eredua (callbacks, confusion matrix)
 
 ### 2️⃣ Transfer Learning
-- **03_ResNet_Transfer_Learning.ipynb**: ResNet50 erabiliz transfer learning
-- **04_VGG16_Fine_Tuning.ipynb**: VGG16 fine-tuning teknikak
+- **[01_Transfer_Learning_Sarrera.ipynb](02_Transfer_Learning/01_Transfer_Learning_Sarrera.ipynb)**: VGG16, ResNet50, MobileNetV2 konparazioa
+- **[02_Cats_vs_Dogs_Klasifikazioa.ipynb](02_Transfer_Learning/02_Cats_vs_Dogs_Klasifikazioa.ipynb)**: Feature Extraction vs Fine-Tuning (25,000 irudi)
 
 ### 3️⃣ Objektu Detekzioa
-- **05_YOLO_Sarrera.ipynb**: YOLO (You Only Look Once) sarrera
-- **06_Objektu_Detekzio_Proiektua.ipynb**: Objektu-detekzio proiektu osoa
+- **[01_Objektu_Detekzioa_Sarrera.ipynb](03_Objektu_Detekzioa/01_Objektu_Detekzioa_Sarrera.ipynb)**: Bounding boxes, IoU, NMS, YOLO arkitektura
+- **[02_YOLO_Praktika.ipynb](03_Objektu_Detekzioa/02_YOLO_Praktika.ipynb)**: YOLOv8 praktika, denbora errealeko detekzioa, 80 klase (COCO)
 
 ### 4️⃣ Aurpegi Ezagutza
-- **07_Face_Recognition.ipynb**: Aurpegi-ezagutza teknikak
-- **08_Emotion_Detection.ipynb**: Emozio-detekzioa kamerarekin
+- **[01_Aurpegi_Ezagutza_Sarrera.ipynb](04_Aurpegi_Ezagutza/01_Aurpegi_Ezagutza_Sarrera.ipynb)**: Face Detection vs Recognition, 128D embeddings, triplet loss
+- **[02_Face_Recognition_Praktika.ipynb](04_Aurpegi_Ezagutza/02_Face_Recognition_Praktika.ipynb)**: face_recognition liburutegia, 68 landmarks, webcam
 
 ### 5️⃣ Proiektu Finala
-- **09_Proiektu_Osoa.ipynb**: Proiektu konplexua ikasitako guztia erabiliz
+- **[01_Proiektu_Finala_CIFAR10.ipynb](05_Proiektu_Finala/01_Proiektu_Finala_CIFAR10.ipynb)**: CIFAR-10 proiektu konplexua (60,000 irudi, 10 klase, custom CNN)
 
 ---
 
@@ -119,22 +119,45 @@ jupyter notebook
 ### 4. Google Colab-en Exekutatu (GPU-rekin)
 Notebook bakoitzaren goiko aldean "Open in Colab" botoia sakatu
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maldalur/Deep_Computer_Vision_Proiektuak)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maldalur/B1_portfolio_digitala)
+
+---
+
+## 📊 PowerPoint Aurkezpena
+
+Proiektu osoaren aurkezpen bat sortu da 12 diapositibarekin:
+
+**🔗 Estekak:**
+- 📊 [Ikusi Google Drive-n](https://docs.google.com/presentation/d/1mWXg933T77FoVqETz7BqCbqY_9r3HJeA/edit?usp=sharing&ouid=115862801143979037014&rtpof=true&sd=true)
+- 📥 [Deskargatu PPT](Deep_Computer_Vision_Aurkezpena.pptx)
+
+**Edukia:**
+- Ikastaroaren aurkezpena eta helburuak
+- 5 atal nagusien deskribapena
+- Teknologiak eta tresnak
+- Lorpen esperatuak
+- Hurrengo pausoak
 
 ---
 
 ## 📦 Dependentziak
 
-- Python 3.8+
-- TensorFlow 2.0+
-- Keras
-- OpenCV (cv2)
-- NumPy
-- Matplotlib
-- scikit-learn
-- Pillow
-- ultralytics (YOLO)
-- face_recognition
+### Liburutegi Nagusiak:
+- **Python 3.8+**: Programazio lengoaia
+- **TensorFlow 2.0+ & Keras**: Deep Learning framework-a
+- **OpenCV (cv2)**: Irudien prozesatzea eta kamera
+- **NumPy & Pandas**: Datu manipulazioa
+- **Matplotlib & Seaborn**: Bisualizazioa
+- **scikit-learn**: Metrikak eta preprocessing
+- **Pillow (PIL)**: Irudi manipulazioa
+- **Ultralytics (YOLOv8)**: Objektu detekzioa
+- **face_recognition & dlib**: Aurpegi ezagutza
+
+### Eredu Aurreentrenatuen:
+- **VGG16**: 138M parametro (ImageNet)
+- **ResNet50**: 25.6M parametro (ImageNet)
+- **MobileNetV2**: 3.5M parametro (mugikorretarako)
+- **YOLOv8**: COCO dataset-arekin (80 klase)
 
 Ikusi `requirements.txt` zerrenda osoa ikusteko.
 
@@ -144,13 +167,14 @@ Ikusi `requirements.txt` zerrenda osoa ikusteko.
 
 Proiektu hauek dataset ezberdinak erabiltzen dituzte:
 
-1. **MNIST**: Eskuz idatzitako zenbakiak (28x28 pixel)
-2. **CIFAR-10**: 10 klase (airplanes, cars, birds, etc.)
-3. **ImageNet**: Transfer Learning-erako
-4. **COCO**: Objektu-detekziorako
-5. **LFW (Labeled Faces in the Wild)**: Aurpegi-ezagutzarako
+1. **MNIST**: 70,000 eskuz idatzitako digitu (28x28 pixel, 10 klase)
+2. **CIFAR-10**: 60,000 irudi koloretsuak (32x32 pixel, 10 klase: airplanes, cars, birds, etc.)
+3. **Dogs vs Cats**: 25,000 irudi (Transfer Learning praktikak)
+4. **ImageNet**: 14M+ irudi (1000 klase, pre-trained ereduetarako)
+5. **COCO**: 330K irudi (80 kategoria, objektu-detekziorako)
+6. **LFW (Labeled Faces in the Wild)**: 13,000 aurpegi irudi
 
-Dataset guztiak automatikoki deskargatzen dira notebook-etan.
+Dataset guztiak automatikoki deskargatzen dira notebook-etan edo TensorFlow/Keras datasets erabiliz.
 
 ---
 
@@ -227,7 +251,17 @@ Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-N
 **Mikel Aldalur Corta**  
 Irakaslea - Instituto de Formación Profesional BIRT  
 📧 maldalur@birt.eus  
-🌐 [Portfolio Digitala](https://maldalur.github.io/B1_portfolio_digitala/)
+🌐 [Portfolio Digitala](https://maldalur.github.io/B1_portfolio_digitala/)  
+🐙 [GitHub](https://github.com/maldalur/B1_portfolio_digitala)
+
+---
+
+## 🔗 Esteka Erabilgarriak
+
+- 🌐 [Portfolio Online](https://maldalur.github.io/B1_portfolio_digitala/)
+- 📊 [PowerPoint Aurkezpena (Google Drive)](https://docs.google.com/presentation/d/1mWXg933T77FoVqETz7BqCbqY_9r3HJeA/edit?usp=sharing&ouid=115862801143979037014&rtpof=true&sd=true)
+- 🐙 [GitHub Repository](https://github.com/maldalur/B1_portfolio_digitala/tree/main/Deep_Computer_Vision_Proiektuak)
+- 📓 [Jupyter Notebooks](https://github.com/maldalur/B1_portfolio_digitala/tree/main/Deep_Computer_Vision_Proiektuak)
 
 ---
 

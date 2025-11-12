@@ -93,8 +93,7 @@
                     <div style="padding: 20px; background: #e8f5e9; border-radius: 10px;">
                         <h4 style="color: #667eea; margin-bottom: 10px;">📊 Emaitzen Interpretazioa</h4>
                         <ul style="margin-left: 20px; font-size: 1.05em; line-height: 1.8;">
-                            <li><strong>0-3 puntu:</strong> Oinarrizko Maila → <a href="#oinarrizko-edukia" style="color: #667eea;">2.A Atalera joan</a></li>
-                            <li><strong>4-7 puntu:</strong> Maila Ertaina → 2.A edo 2.B aukeratu</li>
+                            <li><strong>0-7 puntu:</strong> Oinarrizko Maila → <a href="#oinarrizko-edukia" style="color: #667eea;">2.A Atalera joan</a></li>
                             <li><strong>8-10 puntu:</strong> Maila Aurreratua → <a href="#eduki-aurreratua" style="color: #667eea;">2.B Atalera joan</a></li>
                         </ul>
                     </div>
@@ -283,22 +282,75 @@ Deep_Computer_Vision_Proiektuak/<br>
                     <div style="padding: 20px; background: #fff3e0; border-radius: 10px; margin-bottom: 20px;">
                         <h4 style="color: #764ba2; margin-bottom: 10px;">📓 Notebook-ak (9 guztira)</h4>
                         <ol style="margin-left: 20px; line-height: 1.9; font-size: 1.05em;">
-                            <li><strong>CNN Oinarriak:</strong> CNN vs MLP, feature maps</li>
-                            <li><strong>Transfer Learning:</strong> ResNet50 katuen vs. txakurren</li>
-                            <li><strong>Fine-Tuning:</strong> Accuracy hobetzea</li>
-                            <li><strong>YOLO Sarrera:</strong> Objektu detekzioa</li>
-                            <li><strong>YOLO Praktika:</strong> Denbera errealean webcam-ekin</li>
-                            <li><strong>Aurpegi Ezagutza:</strong> Face Recognition</li>
-                            <li><strong>Emozio Detekzioa:</strong> DeepFace</li>
-                            <li><strong>Proiektu Finala:</strong> Segurtasun Sistema osoa</li>
+                            <li><strong>01_CNN_Sarrera:</strong> CNN kontzeptua, MLP vs CNN</li>
+                            <li><strong>02_Lehen_CNN_Eredua:</strong> MNIST dataset-arekin</li>
+                            <li><strong>01_Transfer_Learning_Sarrera:</strong> VGG16, ResNet50, MobileNetV2</li>
+                            <li><strong>02_Cats_vs_Dogs:</strong> Feature Extraction vs Fine-Tuning</li>
+                            <li><strong>01_Objektu_Detekzioa_Sarrera:</strong> Bounding boxes, IoU, NMS</li>
+                            <li><strong>02_YOLO_Praktika:</strong> YOLOv8 denbora errealean</li>
+                            <li><strong>01_Aurpegi_Ezagutza_Sarrera:</strong> Face embeddings (128D)</li>
+                            <li><strong>02_Face_Recognition_Praktika:</strong> face_recognition lib</li>
+                            <li><strong>01_Proiektu_Finala_CIFAR10:</strong> Proiektu integrala</li>
                         </ol>
                     </div>
                     
+                    <div style="padding: 20px; background: #e1f5fe; border-radius: 10px; margin-bottom: 20px;">
+                        <h4 style="color: #0277bd; margin-bottom: 10px;">📊 PowerPoint Aurkezpena</h4>
+                        <p style="margin-bottom: 15px;">Deep Computer Vision proiektuaren aurkezpen profesionala sortu da 12 diapositibarekin:</p>
+                        <div style="background: white; padding: 15px; border-radius: 8px; margin-top: 10px;">
+                            <p style="margin-bottom: 10px;"><strong>Edukia:</strong></p>
+                            <ul style="margin-left: 20px; font-size: 0.95em; line-height: 1.6;">
+                                <li>Ikastaroaren aurkezpena eta helburuak</li>
+                                <li>5 atal nagusien deskribapena</li>
+                                <li>Teknologiak eta tresnak</li>
+                                <li>Lorpen esperatuak</li>
+                                <li>Hurrengo pausoak</li>
+                            </ul>
+                            <div style="margin-top: 15px; display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="https://docs.google.com/presentation/d/1mWXg933T77FoVqETz7BqCbqY_9r3HJeA/edit?usp=sharing&ouid=115862801143979037014&rtpof=true&sd=true" 
+                                   target="_blank"
+                                   style="display: inline-block; padding: 10px 20px; background: #0277bd; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                                    📊 Ikusi Google Drive-n
+                                </a>
+                                <a href="Deep_Computer_Vision_Proiektuak/Deep_Computer_Vision_Aurkezpena.pptx" 
+                                   download
+                                   style="display: inline-block; padding: 10px 20px; background: #4caf50; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                                    📥 Deskargatu PPT
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div style="padding: 20px; background: #e8f5e9; border-radius: 10px;">
-                        <h4 style="color: #667eea; margin-bottom: 10px;">🔧 Teknologiak</h4>
-                        <p><strong>Liburutegiak:</strong> TensorFlow, Keras, PyTorch, OpenCV, Ultralytics (YOLO), face_recognition, DeepFace</p>
-                        <p style="margin-top: 10px;"><strong>Ereduak:</strong> ResNet50, VGG16, InceptionV3, YOLOv8</p>
-                        <p style="margin-top: 10px;"><strong>Datuak:</strong> MNIST, ImageNet, animaliak, aurpegiak</p>
+                        <h4 style="color: #667eea; margin-bottom: 10px;">🔧 Teknologiak eta Tresnak</h4>
+                        <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+                            <p style="margin-bottom: 8px;"><strong>🐍 Liburutegi Nagusiak:</strong></p>
+                            <ul style="margin-left: 20px; font-size: 0.95em; line-height: 1.6;">
+                                <li><strong>TensorFlow 2.0+</strong> & <strong>Keras:</strong> Deep Learning framework-a</li>
+                                <li><strong>OpenCV:</strong> Irudien prozesatzea eta kamera kudeaketa</li>
+                                <li><strong>Ultralytics (YOLOv8):</strong> Objektu detekzio modernoa</li>
+                                <li><strong>face_recognition:</strong> Aurpegi ezagutza (dlib-en gainean)</li>
+                                <li><strong>Matplotlib, NumPy:</strong> Bisualizazioa eta datu manipulazioa</li>
+                            </ul>
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 8px; margin-bottom: 10px;">
+                            <p style="margin-bottom: 8px;"><strong>🤖 Eredu Aurreentrenatuen:</strong></p>
+                            <ul style="margin-left: 20px; font-size: 0.95em; line-height: 1.6;">
+                                <li><strong>VGG16:</strong> 138M parametro (ImageNet)</li>
+                                <li><strong>ResNet50:</strong> 25.6M parametro (ImageNet)</li>
+                                <li><strong>MobileNetV2:</strong> 3.5M parametro (mugikorretarako optimizatua)</li>
+                                <li><strong>YOLOv8:</strong> COCO dataset-arekin entrenatua (80 klase)</li>
+                            </ul>
+                        </div>
+                        <div style="background: white; padding: 15px; border-radius: 8px;">
+                            <p style="margin-bottom: 8px;"><strong>📊 Dataset-ak:</strong></p>
+                            <ul style="margin-left: 20px; font-size: 0.95em; line-height: 1.6;">
+                                <li><strong>MNIST:</strong> 70,000 eskuz idatzitako digitu (28x28)</li>
+                                <li><strong>CIFAR-10:</strong> 60,000 irudi (32x32, 10 klase)</li>
+                                <li><strong>Dogs vs Cats:</strong> 25,000 irudi (Transfer Learning-erako)</li>
+                                <li><strong>COCO:</strong> 80 kategoria (YOLOv8-rekin)</li>
+                            </ul>
+                        </div>
                     </div>
                     
                 </div>

@@ -7,15 +7,18 @@ Karpeta honetan CNN (Convolutional Neural Networks) oinarriak ikasiko ditugu.
 ## 📓 Notebooks
 
 ### 01_CNN_Sarrera.ipynb
-- CNN kontzeptuaren sarrera
-- MLP vs CNN konparaketa
-- MNIST dataset-arekin praktika
-- Feature maps birtualizazioa
+- ✅ **CNN vs MLP konparaketa**: Zergatik CNN irudietan hobeak diren
+- ✅ **Konboluzio geruzen funtzionamendua**: Kernel-ak eta feature maps
+- ✅ **Pooling estrategiak**: Max pooling vs Average pooling
+- ✅ **MNIST dataset-a**: 70,000 eskuz idatzitako digitu (28x28)
+- ✅ **Bisualizazioak**: Feature maps eta filter-en interpretazioa
 
 ### 02_Lehen_CNN_Eredua.ipynb
-- CNN eredu bat zerotik eraikitzen
-- Hiper-parametroen optimizazioa
-- Confusion matrix eta metrikak
+- ✅ **CNN eredua zerotik**: Conv2D + MaxPooling + Dense geruzen diseinua
+- ✅ **Callbacks**: EarlyStopping, ModelCheckpoint, ReduceLROnPlateau
+- ✅ **Entrenamendua**: MNIST-ekin 10 digitu klasifikatu
+- ✅ **Ebaluazioa**: Accuracy, Loss, Confusion Matrix
+- ✅ **Aurreikuspenak**: Test dataset-ekin proba eta emaitzen bisualizazioa
 
 ## 📂 datuak/
 

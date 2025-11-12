@@ -6,15 +6,19 @@ Face Recognition eta Emotion Detection teknikak erabiliz aurpegi-ezagutza sistem
 
 ## 📓 Notebooks
 
-### 07_Face_Recognition.ipynb
-- Face Recognition oinarriak
-- Face embeddings
-- Aurpegiak sailkatu eta ezagutu
+### 01_Aurpegi_Ezagutza_Sarrera.ipynb
+- ✅ **Face Detection vs Face Recognition**: Bi teknika desberdintzea
+- ✅ **Haar Cascades**: OpenCV aurpegi detekziorako (klasikoa)
+- ✅ **DNN Face Detector**: Deep Learning aurpegi detekziorako (modernoa)
+- ✅ **Face Embeddings**: 128 dimentsioko bektorea aurpegi bakoitzeko
+- ✅ **Triplet Loss**: FaceNet ereduaren entrenamendua (antzekotasun ikaskuntza)
 
-### 08_Emotion_Detection.ipynb
-- Emozio-detekzioa
-- CNN eredua emozioak sailkatzeko
-- Kamerarekin denbora errealean
+### 02_Face_Recognition_Praktika.ipynb
+- ✅ **face_recognition liburutegia**: dlib-en gainean eraikitako liburutegia
+- ✅ **68 facial landmarks**: Aurpegiaren puntu nagusiak (begiak, sudurra, ahoa...)
+- ✅ **Aurpegi ezagutu**: Zein pertsona den zehaztu (database batekin)
+- ✅ **Irudi estatikoak**: Argazki batean aurpegiak identifikatu
+- ✅ **Webcam denbora errealean**: Kamerarekin zuzenean aurpegiak ezagutu
 
 ## 📂 aurpegiak/
 
