@@ -331,3 +331,182 @@ footer a {
         margin-top: 5px;
     }
 }
+
+/* ==================== IRISGARRITASUNA / ACCESIBILIDAD ==================== */
+
+/* Botón de accesibilidad flotante */
+.accessibility-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.accessibility-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* Menú de accesibilidad */
+.accessibility-menu {
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 999;
+    min-width: 250px;
+}
+
+.accessibility-menu.active {
+    display: block;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.accessibility-menu h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.accessibility-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.accessibility-option:hover {
+    background: #f0f0f0;
+}
+
+.accessibility-option label {
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.accessibility-option input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Modo de lectura */
+body.reading-mode {
+    background: #f5f5f5;
+}
+
+body.reading-mode .container {
+    max-width: 800px;
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+body.reading-mode header {
+    padding: 20px;
+}
+
+body.reading-mode .main-nav {
+    display: none;
+}
+
+body.reading-mode .task-card {
+    box-shadow: none;
+    border: 1px solid #e0e0e0;
+}
+
+/* Texto alto contraste */
+body.high-contrast {
+    background: #000;
+}
+
+body.high-contrast .container {
+    background: #000;
+    color: #fff;
+}
+
+body.high-contrast .task-card {
+    background: #1a1a1a;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+body.high-contrast h1,
+body.high-contrast h2,
+body.high-contrast h3,
+body.high-contrast h4 {
+    color: #ffff00;
+}
+
+body.high-contrast a {
+    color: #00ffff;
+}
+
+body.high-contrast .badge {
+    background: #fff;
+    color: #000;
+}
+
+/* Tamaño de texto grande */
+body.large-text {
+    font-size: 120%;
+}
+
+body.large-text h1 {
+    font-size: 2.8em;
+}
+
+body.large-text h2 {
+    font-size: 2.2em;
+}
+
+body.large-text h3 {
+    font-size: 1.8em;
+}
+
+/* Espaciado amplio */
+body.wide-spacing {
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+}
+
+body.wide-spacing .content {
+    line-height: 2;
+}
+
+/* Ocultar imágenes decorativas en modo lectura */
+body.reading-mode img[src*="icon"],
+body.reading-mode img[src*="decoration"] {
+    display: none;
+}

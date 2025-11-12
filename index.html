@@ -16,9 +16,65 @@
         
         <nav class="main-nav">
             <a href="index.html" class="active">📋 Sarrera</a>
-            <a href="bidalketa1.html">� B1.1 Lehen Bidalketa</a>
-            <a href="bidalketa2.html">� B1.2 Bigarren Bidalketa</a>
+            <a href="bidalketa1.html">📦 B1.1 Lehen Bidalketa</a>
+            <a href="bidalketa2.html">📦 B1.2 Bigarren Bidalketa</a>
         </nav>
+        
+        <!-- IRAKURKETA MODUA / MODO LECTURA POR VOZ -->
+        <div id="audioReaderPanel" style="position: fixed; bottom: 20px; left: 20px; z-index: 1000; background: white; border-radius: 15px; padding: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: none;">
+            <div style="margin-bottom: 10px;">
+                <label style="display: block; margin-bottom: 5px; font-weight: bold; color: #667eea;">🌐 Hizkuntza / Idioma:</label>
+                <select id="languageSelect" onchange="changeLanguage()" style="width: 100%; padding: 8px; border: 2px solid #667eea; border-radius: 8px; font-size: 14px; cursor: pointer;">
+                    <option value="es-ES">🇪🇸 Español</option>
+                    <option value="eu-ES">🇪🇺 Euskara</option>
+                    <option value="en-US">🇬🇧 English</option>
+                    <option value="fr-FR">🇫🇷 Français</option>
+                </select>
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <button id="playPauseBtn" onclick="togglePlayPause()" 
+                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                               color: white; 
+                               border: none; 
+                               border-radius: 10px; 
+                               padding: 10px 20px; 
+                               font-size: 20px; 
+                               cursor: pointer; 
+                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                               transition: all 0.3s ease;">
+                    ▶️ Play
+                </button>
+                <button onclick="closeAudioPanel()" 
+                        style="background: #dc3545; 
+                               color: white; 
+                               border: none; 
+                               border-radius: 10px; 
+                               padding: 10px 20px; 
+                               font-size: 14px; 
+                               cursor: pointer; 
+                               box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+                               transition: all 0.3s ease;">
+                    ❌ Itxi
+                </button>
+            </div>
+        </div>
+        
+        <!-- Botón flotante para abrir el panel -->
+        <div style="position: fixed; bottom: 20px; left: 20px; z-index: 999;">
+            <button id="audioReaderBtn" onclick="openAudioPanel()" 
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                           color: white; 
+                           border: none; 
+                           border-radius: 50%; 
+                           width: 60px; 
+                           height: 60px; 
+                           font-size: 24px; 
+                           cursor: pointer; 
+                           box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                           transition: all 0.3s ease;">
+                🔊
+            </button>
+        </div>
         
         <div class="content">
             <section>
@@ -65,12 +121,17 @@
                         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 800px; margin: 0 auto;">
                             <iframe 
                                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);"
-                                src="https://www.youtube.com/embed/udDRDfqSZZE" 
+                                src="https://www.youtube.com/embed/udDRDfqSZZE?cc_load_policy=1&hl=eu" 
                                 title="Portfolio Digital B1 - Lehen Bidalketa" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
                             </iframe>
+                        </div>
+                        <div style="margin-top: 10px; padding: 10px; background: #e8f5e9; border-left: 4px solid #4caf50; border-radius: 4px;">
+                            <p style="margin: 0; color: #2e7d32; font-size: 0.9em;">
+                                ♿ <strong>Irisgarritasuna:</strong> Bideoak azpitituluak ditu (CC).
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -125,12 +186,17 @@
                         <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 700px; margin: 0 auto;">
                             <iframe 
                                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);"
-                                src="https://www.youtube.com/embed/tGlLE_YwyNQ" 
+                                src="https://www.youtube.com/embed/tGlLE_YwyNQ?cc_load_policy=1&hl=eu" 
                                 title="Portfolio Digital B1 - Bigarren Bidalketa" 
                                 frameborder="0" 
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                                 allowfullscreen>
                             </iframe>
+                        </div>
+                        <div style="margin-top: 10px; padding: 10px; background: #e8f5e9; border-left: 4px solid #4caf50; border-radius: 4px;">
+                            <p style="margin: 0; color: #2e7d32; font-size: 0.9em;">
+                                ♿ <strong>Irisgarritasuna:</strong> Bideoak azpitituluak ditu (CC).
+                            </p>
                         </div>
                     </div>
                     
@@ -159,5 +225,279 @@
             </p>
         </footer>
     </div>
+
+    <!-- Botón de Accesibilidad -->
+    <button class="accessibility-button" id="accessibilityBtn" aria-label="Irisgarritasun aukerak">
+        ♿
+    </button>
+
+    <!-- Menú de Accesibilidad -->
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <h3>♿ Irisgarritasuna</h3>
+        
+        <div class="accessibility-option">
+            <label for="readingMode">📖 Irakurketa modua</label>
+            <input type="checkbox" id="readingMode">
+        </div>
+        
+        <div class="accessibility-option">
+            <label for="highContrast">🎨 Kontraste altua</label>
+            <input type="checkbox" id="highContrast">
+        </div>
+        
+        <div class="accessibility-option">
+            <label for="largeText">🔤 Testu handia</label>
+            <input type="checkbox" id="largeText">
+        </div>
+        
+        <div class="accessibility-option">
+            <label for="wideSpacing">📏 Tarteak zabaldu</label>
+            <input type="checkbox" id="wideSpacing">
+        </div>
+    </div>
+
+    <script>
+        // Control del menú de accesibilidad
+        const accessibilityBtn = document.getElementById('accessibilityBtn');
+        const accessibilityMenu = document.getElementById('accessibilityMenu');
+
+        accessibilityBtn.addEventListener('click', () => {
+            accessibilityMenu.classList.toggle('active');
+        });
+
+        // Cerrar el menú si se hace clic fuera
+        document.addEventListener('click', (e) => {
+            if (!accessibilityBtn.contains(e.target) && !accessibilityMenu.contains(e.target)) {
+                accessibilityMenu.classList.remove('active');
+            }
+        });
+
+        // Modo de lectura
+        document.getElementById('readingMode').addEventListener('change', function() {
+            document.body.classList.toggle('reading-mode', this.checked);
+            localStorage.setItem('readingMode', this.checked);
+        });
+
+        // Alto contraste
+        document.getElementById('highContrast').addEventListener('change', function() {
+            document.body.classList.toggle('high-contrast', this.checked);
+            localStorage.setItem('highContrast', this.checked);
+        });
+
+        // Texto grande
+        document.getElementById('largeText').addEventListener('change', function() {
+            document.body.classList.toggle('large-text', this.checked);
+            localStorage.setItem('largeText', this.checked);
+        });
+
+        // Espaciado amplio
+        document.getElementById('wideSpacing').addEventListener('change', function() {
+            document.body.classList.toggle('wide-spacing', this.checked);
+            localStorage.setItem('wideSpacing', this.checked);
+        });
+
+        // Restaurar preferencias guardadas
+        window.addEventListener('load', () => {
+            if (localStorage.getItem('readingMode') === 'true') {
+                document.getElementById('readingMode').checked = true;
+                document.body.classList.add('reading-mode');
+            }
+            if (localStorage.getItem('highContrast') === 'true') {
+                document.getElementById('highContrast').checked = true;
+                document.body.classList.add('high-contrast');
+            }
+            if (localStorage.getItem('largeText') === 'true') {
+                document.getElementById('largeText').checked = true;
+                document.body.classList.add('large-text');
+            }
+            if (localStorage.getItem('wideSpacing') === 'true') {
+                document.getElementById('wideSpacing').checked = true;
+                document.body.classList.add('wide-spacing');
+            }
+        });
+    </script>
+    
+    <!-- AUDIO READER SCRIPT / IRAKURKETA AUDIO SCRIPT -->
+    <script>
+        let isReading = false;
+        let isPaused = false;
+        let utterance = null;
+        let currentIndex = 0;
+        let contentElements = [];
+        let availableVoices = [];
+        let selectedLanguage = 'es-ES'; // Por defecto español
+        
+        // Cargar voces disponibles
+        function loadVoices() {
+            availableVoices = window.speechSynthesis.getVoices();
+            console.log('Voces disponibles:', availableVoices.map(v => v.lang + ' - ' + v.name));
+            
+            // Actualizar opciones del selector basadas en voces disponibles
+            updateLanguageOptions();
+        }
+        
+        // Actualizar opciones de idioma disponibles
+        function updateLanguageOptions() {
+            const select = document.getElementById('languageSelect');
+            const hasBasque = availableVoices.some(v => v.lang.startsWith('eu'));
+            const hasEnglish = availableVoices.some(v => v.lang.startsWith('en'));
+            const hasFrench = availableVoices.some(v => v.lang.startsWith('fr'));
+            
+            // Deshabilitar opciones no disponibles
+            Array.from(select.options).forEach(option => {
+                const lang = option.value.substring(0, 2);
+                if (lang === 'eu' && !hasBasque) {
+                    option.disabled = true;
+                    option.text += ' (Ez dago erabilgarri)';
+                }
+            });
+        }
+        
+        // Cargar voces al inicio
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = loadVoices;
+        }
+        loadVoices();
+        
+        // Abrir panel de audio
+        function openAudioPanel() {
+            document.getElementById('audioReaderPanel').style.display = 'block';
+            document.getElementById('audioReaderBtn').style.display = 'none';
+        }
+        
+        // Cerrar panel de audio
+        function closeAudioPanel() {
+            stopAudioReader();
+            document.getElementById('audioReaderPanel').style.display = 'none';
+            document.getElementById('audioReaderBtn').style.display = 'block';
+        }
+        
+        // Cambiar idioma
+        function changeLanguage() {
+            selectedLanguage = document.getElementById('languageSelect').value;
+            console.log('Idioma seleccionado:', selectedLanguage);
+            
+            // Si está leyendo, reiniciar con el nuevo idioma
+            if (isReading) {
+                stopAudioReader();
+                setTimeout(startAudioReader, 100);
+            }
+        }
+        
+        // Toggle Play/Pause
+        function togglePlayPause() {
+            const btn = document.getElementById('playPauseBtn');
+            
+            if (!isReading) {
+                // Iniciar lectura
+                startAudioReader();
+                btn.textContent = '⏸️ Pause';
+                btn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
+                isReading = true;
+                isPaused = false;
+            } else if (isPaused) {
+                // Reanudar
+                window.speechSynthesis.resume();
+                btn.textContent = '⏸️ Pause';
+                isPaused = false;
+            } else {
+                // Pausar
+                window.speechSynthesis.pause();
+                btn.textContent = '▶️ Play';
+                isPaused = true;
+            }
+        }
+        
+        function startAudioReader() {
+            // Asegurarse de que las voces estén cargadas
+            if (availableVoices.length === 0) {
+                loadVoices();
+            }
+            
+            // Lortu eduki guztiak / Obtener todo el contenido
+            const content = document.querySelector('.content');
+            contentElements = Array.from(content.querySelectorAll('h2, h3, h4, p, li'))
+                .filter(el => {
+                    // Filtratu elementu hutsak eta irudiak / Filtrar elementos vacíos e imágenes
+                    const text = el.textContent.trim();
+                    return text.length > 0 && !el.querySelector('img') && !el.classList.contains('badge');
+                });
+            
+            currentIndex = 0;
+            readNextElement();
+        }
+        
+        function readNextElement() {
+            if (currentIndex >= contentElements.length || !isReading) {
+                stopAudioReader();
+                return;
+            }
+            
+            const element = contentElements[currentIndex];
+            const text = element.textContent.trim();
+            
+            // Nabarmendu irakurtzen ari den elementua / Resaltar elemento que se está leyendo
+            element.style.backgroundColor = '#fff3cd';
+            element.style.transition = 'background-color 0.3s';
+            
+            // Sortu utterance / Crear utterance
+            utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = selectedLanguage;
+            utterance.rate = 0.85; // Abiadura / Velocidad (más lento para mejor comprensión)
+            utterance.pitch = 1;
+            utterance.volume = 1;
+            
+            // Intentar usar la mejor voz disponible
+            const voice = availableVoices.find(v => v.lang === selectedLanguage) || 
+                         availableVoices.find(v => v.lang.startsWith(selectedLanguage.substring(0, 2))) ||
+                         availableVoices[0];
+            if (voice) {
+                utterance.voice = voice;
+            }
+            
+            // Amaiera kudeatzea / Manejar finalización
+            utterance.onend = function() {
+                element.style.backgroundColor = '';
+                currentIndex++;
+                setTimeout(readNextElement, 100); // Pequeña pausa entre elementos
+            };
+            
+            // Errorea kudeatzea / Manejar error
+            utterance.onerror = function(event) {
+                console.error('Speech synthesis error:', event);
+                element.style.backgroundColor = '';
+                currentIndex++;
+                readNextElement();
+            };
+            
+            // Hasi irakurketa / Iniciar lectura
+            window.speechSynthesis.speak(utterance);
+        }
+        
+        function stopAudioReader() {
+            window.speechSynthesis.cancel();
+            isReading = false;
+            isPaused = false;
+            currentIndex = 0;
+            
+            // Kendu nabarmentze guztiak / Quitar todos los resaltados
+            contentElements.forEach(el => {
+                if (el && el.style) {
+                    el.style.backgroundColor = '';
+                }
+            });
+            
+            const btn = document.getElementById('playPauseBtn');
+            if (btn) {
+                btn.textContent = '▶️ Play';
+                btn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
+        }
+        
+        // Gelditu irakurketa orria itxi aurretik / Detener lectura antes de cerrar la página
+        window.addEventListener('beforeunload', function() {
+            stopAudioReader();
+        });
+    </script>
 </body>
 </html>
