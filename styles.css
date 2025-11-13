@@ -555,6 +555,27 @@ body.high-contrast code {
     border: 1px solid #fff !important;
 }
 
+/* Gainidatzi inline style-ak kontraste altuan */
+body.high-contrast [style*="background"] {
+    background: #1a1a1a !important;
+}
+
+body.high-contrast .task-card[style*="background"] {
+    background: #1a1a1a !important;
+    color: #fff !important;
+}
+
+body.high-contrast div[style*="background: #e8f5e9"],
+body.high-contrast div[style*="background: #e3f2fd"],
+body.high-contrast div[style*="background: #f3e5f5"],
+body.high-contrast div[style*="background: #fff3e0"],
+body.high-contrast div[style*="background: #e1f5fe"],
+body.high-contrast div[style*="background:linear-gradient"],
+body.high-contrast .task-card[style*="background:linear-gradient"] {
+    background: #1a1a1a !important;
+    color: #fff !important;
+}
+
 /* Tamaño de texto grande */
 body.large-text {
     font-size: 120%;
