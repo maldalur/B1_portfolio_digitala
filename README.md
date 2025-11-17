@@ -1,5 +1,7 @@
 # B1 Portfolio Digitala
 
+[![Acceso a la Web](https://img.shields.io/badge/Acceso-Web-blue)](https://maldalur.github.io/B1_portfolio_digitala/)
+
 Este proyecto contiene una colección de recursos y proyectos relacionados con visión por computadora y aprendizaje profundo. Está organizado en diferentes carpetas que incluyen notebooks, scripts y archivos de apoyo para explorar conceptos clave y realizar prácticas.
 
 ## Estructura del Proyecto
