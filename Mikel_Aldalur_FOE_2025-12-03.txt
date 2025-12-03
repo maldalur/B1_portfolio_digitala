@@ -1,0 +1,86 @@
+FORMAKUNTZA ONDORENGO EBALUAZIOA (FOE)
+=======================================
+Ikaslea: Mikel Aldalur
+Gaia: Ikusmen Artifiziala
+Data: 3/12/2025, 10:44:21
+
+EMAITZEN LABURPENA
+------------------
+Ulermen Maila: Aurreratua
+
+Laburpena:
+Ikasleak Ikusmen Artifizialeko eta Konboluzio-Sare Neuronaletako (CNN) oinarrizko eta bitarteko kontzeptuen ulermen sakona erakusten du. Galdera tekniko guztiei zehaztasunez erantzun die, terminologia egokia erabiliz eta azalpen matematikoak zein praktikoak emanez. CNN arkitekturaren, konboluzio-eragiketaren, hiperparametroen (stride, padding), aktibazio-funtzioen (Softmax), galera-funtzioen (Categorical Cross-Entropy) eta optimizazio-algoritmoen (Gradient Descent, Adam) ezagutza sendoa du. Kontzeptu konplexuak argi eta garbi azaltzeko gai da, eta haien zergatia eta erabilera-kasuak justifikatzen ditu.
+
+Indarguneak:
+- CNN arkitektura eta geruza nagusien (konboluzioa, pooling, guztiz konektatua) ulermen argia.
+- Konboluzio-eragiketaren funtzionamendu matematikoaren azalpen zehatza, ekuazio sinplifikatuak barne.
+- Stride eta padding parametroen eginkizuna eta haien eragina irteerako ezaugarri-maparen dimentsioetan, baita padding-aren garrantzia ere.
+- Flattening operazioaren beharraren azalpen zuzena geruza konboluzionalen eta guztiz konektatuen artean.
+- Softmax aktibazio-funtzioaren funtzionamendua, helburua eta egokitasuna klase anitzeko sailkapenean, Sigmoid funtzioarekiko desberdintasunak barne.
+- Galera-funtzioen (Categorical Cross-Entropy, Mean Squared Error) helburua, kalkulua eta erabilera-kasuak menperatzea.
+- Gradient Descent optimizazio-algoritmoaren funtsa eta learning rate parametroaren garrantziaren ulermena.
+- Optimizatzaile aurreratuen (Adam) ezagutza eta haien abantailen identifikazioa jatorrizko Gradient Descent-arekiko.
+
+Hobetzeko arloak:
+- Aurrerago sakondu daitezke sare neuronalen erregularizazio tekniketan (adibidez, Dropout, L1/L2 erregularizazioa) gainentrenamendua ekiditeko.
+- Batch Normalization bezalako tekniken ulermena zabaldu, sareen trebakuntza egonkortzeko eta azkartzeko.
+- CNN arkitektura ezberdinak (adibidez, ResNet, VGG, Inception) eta Transfer Learning bezalako kontzeptuak ikertu, arazo konplexuagoak ebazteko.
+
+---------------------------------------
+ELKARRIZKETA OSOA (TRANSKRIPZIOA)
+---------------------------------------
+
+Ebaluatzailea: Kaixo! Hasi gaitezen. Ikusmen Artifizialaren arloan, irudien sailkapena oinarrizko zeregina da. Azaldu, mesedez, nola funtzionatzen duen konboluzio-sare neuronal (CNN) batek irudi bat sailkatzeko. Zehaztu geruza nagusiak eta bakoitzaren helburu matematikoa.
+
+Ikaslea: CNN bat irudiak prozesatzeko diseinatutako sare neuronal mota bat da. Geruza nagusiak hauek dira: 1. Konboluzio geruza: Irudiaren ezaugarriak ateratzen ditu iragazkiak aplikatuz. Matematikoki, sarrerako matrizearen eta iragazkiaren arteko biderketa eskalarra eta batuketa egiten du. 2. Pooling geruza: Dimentsionalitatea murrizten du. Adibidez, Max Pooling-ek leiho bateko balio maximoa hartzen du. 3. Geruza guztiz konektatua: Aurreko geruzetatik ateratako ezaugarriak hartu eta azken sailkapena egiten du (normalean Softmax funtzioarekin).
+
+Ebaluatzailea: Ondo. Konboluzio-geruzari buruzko azalpenari dagokionez, aipatu duzu iragazkiak aplikatzen direla eta biderketa eskalarra eta batuketa egiten direla. Zehaztu dezakezu, mesedez, nola kalkulatzen den irteerako ezaugarri-mapa (feature map) bateko balio bakoitza matematikoki? Hau da, nola mugitzen da iragazkia irudiaren gainean eta nola aplikatzen da konboluzio-eragiketa puntu bakoitzean? Sartu ekuazio sinplifikatu bat edo deskribapen zehatzago bat prozesu matematiko hori argitzeko. Gainera, aipatu zein den *stride* eta *padding* parametroen eginkizuna konboluzio-operazioan.
+
+Ikaslea: Konboluzioan, iragazkia (kernel) irudiaren gainean mugitzen da. Posizio bakoitzean, iragazkiaren balioen eta irudiaren dagokion azpi-eskualdearen balioen arteko elementuz-elementuko biderketa egiten da, eta emaitza guztiak batzen dira balio bakar bat lortzeko. Matematikoki, Y[i, j] = sum(X[i+m, j+n] * K[m, n]). Stride: Iragazkia zenbat pixeletan mugitzen den pauso bakoitzean. Padding: Irudiaren inguruan balioak (zeroak) gehitzea, dimentsioa kontrolatzeko.
+
+Ebaluatzailea: Azalpen ona. Orain sakon gaitezen apur bat gehiago. Aipatu duzun ekuazioan, $Y[i, j] = \sum_{m} \sum_{n} (X[i+m, j+n] \cdot K[m, n])$, $X$ sarrerako irudia da, $K$ iragazkia eta $Y$ irteerako ezaugarri-mapa.
+
+Demagun sarrerako irudi bat daukagula ($X$) 5x5 dimentsiokoa eta 3x3 dimentsioko iragazki bat ($K$).
+
+1.  Zein izango litzateke irteerako ezaugarri-maparen ($Y$) dimentsioa, *stride* = 1 eta *padding* = 0 badira?
+2.  Nola eragingo luke *stride* = 2 izateak irteerako maparen dimentsioan?
+3.  Zergatik da garrantzitsua *padding*-a erabiltzea sare neuronal konboluzionaletan? Zein arazo konpontzen du?
+
+Erantzun galdera hauei, mesedez, ahalik eta zehatzen.
+
+Ikaslea: 1. Dimentsioa kalkulatzeko formula: (W - K + 2P) / S + 1. Kasu honetan: (5 - 3 + 0) / 1 + 1 = 3. Beraz, irteera 3x3 izango da. 2. Stride = 2 bada: (5 - 3 + 0) / 2 + 1 = 2. Beraz, irteera 2x2 izango da. 3. Padding-a garrantzitsua da bi arrazoirengatik: batetik, irudiaren dimentsio espazialak mantentzeko (bestela sarea sakontzean irudia azkarregi txikituko litzateke), eta bestetik, irudiaren ertzetako informazioa ez galtzeko (ertzetako pixelak gutxiagotan prozesatzen direlako padding gabe).
+
+Ebaluatzailea: Oso ondo, formulak eta arrazoiak zuzenak dira. Orain, geruza guztiz konektatuei (Fully Connected Layers - FC Layers) buruzko galdera bat.
+
+Aipatu duzu FC geruzek aurreko geruzetatik ateratako ezaugarriak hartu eta azken sailkapena egiten dutela.
+
+1.  Zergatik da beharrezkoa *flattening* operazioa konboluzio-geruzen irteeraren eta geruza guztiz konektatuen sarreraren artean?
+2.  Azaldu Softmax aktibazio-funtzioaren helburua eta nola funtzionatzen duen matematikoki sailkapen-zeregin batean. Zergatik da egokia Softmax irteera-geruzan, eta ez, adibidez, Sigmoid funtzioa klase anitzeko sailkapen-kasuetan?
+
+Xehetasun teknikoak ematea espero dut.
+
+Ikaslea: 1. Flattening beharrezkoa da konboluzio-geruzek 3D tentsoreak (altuera, zabalera, kanalak) itzultzen dituztelako, baina geruza guztiz konektatuek (FC) 1D bektore bat espero dutelako sarrera gisa. Beraz, datuen egitura egokitzeko balio du. 2. Softmax-ek sarearen irteerako balio gordinak (logits) probabilitate bihurtzen ditu, guztien batura 1 izanik. Matematikoki: sigma(z)_i = e^(z_i) / sum(e^(z_j)). Klase anitzeko sailkapenean Softmax egokiagoa da Sigmoid baino, Sigmoid-ek klase bakoitza independenteki tratatzen duelako (multi-label-erako egokia), eta Softmax-ek klaseak elkarren artean esklusiboak direla bermatzen duelako (probabilitateen batura 1 delako).
+
+Ebaluatzailea: Oso ondo azaldu duzu *flattening*-aren beharra eta Softmax funtzioaren funtzionamendua zein abantailak klase anitzeko sailkapenean.
+
+Orain, joan gaitezen sare neuronalen trebakuntzara. Entrenamendu-prozesuan, galera-funtzio (Loss Function) bat minimizatu ohi da.
+
+1.  Zein da galera-funtzio baten helburu nagusia sare neuronal bat entrenatzen denean?
+2.  Klase anitzeko sailkapen-zeregin batean, non Softmax aktibazioa erabiltzen den irteera-geruzan, zein galera-funtzio erabili ohi da? Azaldu zergatik den egokia galera-funtzio hori eta nola kalkulatzen den (ekuazio sinplifikatu baten bidez edo deskribapen zehatz batekin).
+3.  Aipatu beste galera-funtzio mota bat (eta zeregin bat) eta azaldu laburki haren erabilera.
+
+Zure erantzun zehatzen zain nago.
+
+Ikaslea: 1. Galera-funtzioaren helburua iragarritako balioaren eta benetako balioaren arteko errorea kuantifikatzea da, optimizazio-algoritmoak (adibidez, Gradient Descent) pisuak doitu ditzan errorea minimizatzeko. 2. Categorical Cross-Entropy erabiltzen da. Benetako banaketaren eta iragarritakoaren arteko desberdintasuna neurtzen du. Formula: L = -sum(y_i * log(y_hat_i)). Egokia da probabilitate-banaketak konparatzeko eta iragarpen okerrak zigortzeko. 3. Mean Squared Error (MSE) erregresio-zereginetan erabiltzen da. Iragarritako eta benetako balioen arteko diferentzia karratuen batezbestekoa kalkulatzen du.
+
+Ebaluatzailea: Bikain! Galera-funtzioen azalpen oso zehatza eman duzu, bai haien helburua, bai Categorical Cross-Entropy eta MSE bezalako adibideak. Orain, optimizazioari helduko diogu.
+
+Galera-funtzioa minimizatzeko, optimizazio-algoritmoak erabiltzen dira. Horietako ohikoena Gradient Descent da, baina horren aldaerak ere badaude.
+
+1.  Azaldu Gradient Descent algoritmoaren funtsa: nola erabiltzen diren gradienteak sare neuronalaren pisuak eguneratzeko eta galera minimizatzeko.
+2.  Zein da *learning rate* (ikaskuntza-tasa) parametroaren garrantzia Gradient Descent-en? Zer gertatuko litzateke ikaskuntza-tasa oso handia edo oso txikia balitz?
+3.  Aipatu eta azaldu laburki Gradient Descent-en aldaera bat (adibidez, Stochastic Gradient Descent edo Adam) eta bere abantaila nagusia jatorrizko Gradient Descent-arekiko.
+
+Aurrera, erantzun zehatzak espero ditut!
+
+Ikaslea: 1. Gradient Descent-ek galera-funtzioaren gradientea kalkulatzen du pisu bakoitzarekiko. Pisuak gradientearen aurkako noranzkoan eguneratzen dira, galera minimizatzeko norabidean jaisteko. 2. Learning rate-ak pausoaren tamaina kontrolatzen du. Handiegia bada, minimoa gainditu eta dibergitu egin dezake. Txikiegia bada, konbergentzia oso motela izango da. 3. Adam (Adaptive Moment Estimation). Parametro bakoitzarentzat ikaskuntza-tasa egokitzen du, gradienteen lehen eta bigarren momentuen estimazioak erabiliz. Abantaila: Konbergentzia azkarragoa eta egonkorragoa lortzen du.

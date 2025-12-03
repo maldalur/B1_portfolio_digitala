@@ -1,0 +1,177 @@
+EBALUAZIO FORMATIBOA - TXOSTENA
+=================================
+Data: 2025/12/1 (21:25:16)
+Ikaslea: Mikel Aldalur
+Gaia: Ikusmen Artifiziala
+
+---------------------------------
+ELKARRIZKETAREN TRANSKRIPZIOA
+---------------------------------
+
+IRAKASLEA (IA):
+Kaixo! Ongi etorri Ikusmen Artifizialaren mundu zirraragarrira. Hasteko, esaidazu, zer datorkizu burura "Ikusmen Artifiziala" terminoa entzutean? Ez dago erantzun okerrik, zure hasierako pentsamenduak jakin nahi ditut.
+
+IKASLEA:
+ordenagailuak ikustea
+
+IRAKASLEA (IA):
+Primeran! Oso labur eta zuzen. "Ordenagailuak ikustea" esaten duzunean, zer esan nahi duzu zehazki? Nola irudikatzen duzu ordenagailu batek "ikustea"?
+
+IKASLEA:
+ordenagailuak irudiak prozesatu eta erabakiak hartzeko gaitasuna
+
+IRAKASLEA (IA):
+Oso ondo bideratuta! Irudiak prozesatzea eta erabakiak hartzea funtsezkoak dira. Hori bikain laburbiltzen duzu.
+
+Sakontzeko, "irudiak prozesatu" esaten duzunean, zer motatako prozesatzeaz ari gara? Zein urrats edo operazio burutzen dituzte ordenagailuek irudi batekin "ikusi" ahal izateko? Adibidez, gizakiok koloreak, formak eta testurak hautematen ditugu. Ordenagailuek ere horrelako gauzak "hautematen" dituzte?
+
+IKASLEA:
+Mota desberdinetako prozesatzeak daude, baina ez dakit gehiegi zehazten zein mota daude
+
+IRAKASLEA (IA):
+Ez kezkatu, horretarako nago ni! Hasteko modu bikaina da.
+
+Ikusmen Artifizialean, ordenagailuek irudiak "ulertzeko" erabiltzen dituzten prozesatze mota asko daude. Baina has gaitezen oinarrizkoenetako batzuekin.
+
+Adibidez, ordenagailu batek irudi bat "ikusten" duenean, funtsean zenbaki multzo handi bat bezala ikusten du (pixelak). Koloreak eta distira zenbaki horien bidez adierazten dira.
+
+Uste duzu ordenagailu batek irudi baten zati garrantzitsuak (adibidez, ertzak edo objektuak) identifikatu ahal izango lituzkeela zenbaki horiek aztertuz? Nola imajinatzen duzu hori gertatuko litzatekeela? Edo, agian, zertarako izan liteke baliagarria irudi bateko ertzak identifikatzea?
+
+IKASLEA:
+posible da ertzak detektatzeko sistemak egotea edo irudien antzekotasunak dituenak
+
+IRAKASLEA (IA):
+Bai, erabat! Oso ondo esanda. *Ertzak detektatzeko sistemak* funtsezkoak dira Ikusmen Artifizialean, eta baita *irudien antzekotasunak* aurkitzeko sistemak ere.
+
+Demagun auto autonomo baten kasua. Zergatik uste duzu izan litekeela garrantzitsua auto horrentzat bidearen ertzak edo inguruko beste auto batzuen ertzak detektatzea? Eta zer lotura izan lezake horrek zuk aipatutako "erabakiak hartzearekin"?
+
+IKASLEA:
+bere erabakietan zer egingo duen erabakiko du, hau da, zein den egingo duen hurrengo ekintza
+
+IRAKASLEA (IA):
+Hori da! Primeran ulertu duzu. Ertzak detektatzeak zuzenean eragiten die auto autonomoen erabakiei, zein izango den hurrengo ekintza zehazten laguntzen baitu.
+
+Baina nola? Zer informazio zehatz ematen dio autoari errepidearen ertza edo beste auto baten ertza detektatzeak, eta nola bihurtzen da informazio hori "hurrengo ekintza" bihurtzeko baliagarri? Beste modu batera esanda, nola laguntzen dio ertz-detekzioak autoari bere ingurunea "ulertzen"?
+
+IKASLEA:
+ondoren zer datorren aurreikusten du aurretik izandako bizipenekin eta horren eraginez erabakiak hartzen ditu
+
+IRAKASLEA (IA):
+Oso ondo! Hor sartzen da jokoan *ikaskuntza automatikoa* eta *Adimen Artifiziala* beraren muina. "Aurretik izandako bizipenak" aipatzean, funtsean, ereduak eta patroiak ikasteaz ari gara.
+
+Ordenagailuek, kasu honetan, datu multzo handietatik (irudi eta bideo asko) ikasi dute, non "ertzak" dauden eta ertz horiek zer esan nahi duten testuinguru ezberdinetan (adibidez, errepidearen ertza, pertsona bat, semaforo bat).
+
+Nola lortzen dute ordenagailuek "aurretik izandako bizipen" horiek? Nola irakasten diegu makinei irudi bateko ertz bat errepide batena dela eta beste bat, adibidez, oinezko batena? Zer motatako prozesua da hori?
+
+IKASLEA:
+guk baldintzatzen ditugu beraie hori jakiteko ematen dizkiegun datuekin
+
+IRAKASLEA (IA):
+Hori da zehazki! "Baldintzatu" terminoa oso egokia da. Datuak ematen dizkiegu, eta datu horiekin "ikasi" egiten dute.
+
+Ikusmen Artifizialean, prozesu horri "entrenamendua" deitzen diogu. Eta zuk aipatzen dituzun "datuak" entrenamendu-datuak dira.
+
+Demagun katu bat eta txakur bat bereizten irakatsi nahi diogula ordenagailu bati. Zer motatako "datuak" eman beharko genizkioke ordenagailuari? Eta datu horiekin batera, zer gehiago beharko luke ordenagailuak ikasteko? Pentsatu zuk zeuk nola ikasiko zenukeen katu bat eta txakur bat bereizten.
+
+IKASLEA:
+katu eta txakurren irudiak eta hauen emaitzak
+
+IRAKASLEA (IA):
+Bikain! Zehatz-mehatz hori da behar dena: katu eta txakurren irudiak, eta irudi bakoitza "katu" edo "txakur" bezala etiketatua (hau da, "emaitzak" deitzen dituzuna). Horri *gainbegiratutako ikaskuntza* deitzen zaio Ikusmen Artifizialean.
+
+Orain, hurrengo urratsa. Imajinatu irudi eta emaitza (etiketa) guzti horiek ordenagailuari eman dizkiogula. Zer egiten du ordenagailuak informazio horrekin guziarekin "ikasteko"? Nola lortzen du, irudi berri bat ematen diogunean, zuzen esatea "hau katu bat da" edo "hau txakur bat da"? Zein prozesu logiko edo matematiko jarrai dezake ordenagailuak horretarako? Pentsatu, adibidez, zuk nola bereiziko zenukeen bat eta bestea.
+
+IKASLEA:
+ez dakit
+
+IRAKASLEA (IA):
+Ez dago arazorik, hori da Ikusmen Artifizialaren zati konplexuenetako bat, eta oso interesgarria gainera!
+
+Funtsean, ordenagailuak irudietan patroiak eta ezaugarriak bilatzen ditu. Adibidez, katuen irudietan beti agertzen diren ezaugarri batzuk egongo dira (adibidez, belarri puntadunak, begi jakin batzuk, biboteak), eta txakurren irudietan beste batzuk (mutur mota desberdinak, belarri desberdinak).
+
+Ordenagailuak "ikasi" egiten du ezaugarri horiek identifikatzen eta haien arteko loturak ezartzen. Milaka irudi ikusi ondoren, eredu bat sortzen du buruan (edo hobeto esanda, bere sare neuronaletan) esateko: "irudi batek ezaugarri multzo hau badu, orduan katu bat da; beste multzo hau badu, txakur bat da".
+
+Hori lortzeko erabiltzen den eredu ohikoenetako bat *Sare Neuronal Konboluzionalak* (CNN) dira, baina ez da beharrezkoa orain horretan sakontzea.
+
+Orain, galdera garrantzitsu bat: ordenagailuak bere "eredua" sortu duenean, nola dakigu eredua ondo ikasi duen edo ez? Nola ebaluatzen dugu ordenagailu baten Ikusmen Artifizialeko sistemaren errendimendua?
+
+IKASLEA:
+balioztatu egin behar dugu eta ebaluatu
+
+IRAKASLEA (IA):
+Primeran! "Balioztatu eta ebaluatu" esan duzu. Hori da hitz egokia.
+
+Baina nola egiten dugu hori praktikoki? Imajinatu katu eta txakurren artean bereizten ikasi duen ordenagailu-eredu hori duzula. Nola jarriko zenuke proban? Zer nolako irudiak erabiliko zenituzke? Eta nola jakingo zenuke bere iragarpenak zuzenak diren ala ez?
+
+Pentsa nola ebaluatuko zenukeen ikasle bat gai honetan. Zer egingo zenuke?
+
+IKASLEA:
+ongi egiten ari den egin behar duena edo ez esan behar diogu
+
+IRAKASLEA (IA):
+Bai, hori da funtsezkoa: ongi egiten ari den edo ez esan behar diogu. Baina nola zehazten dugu *ongi egiten ari den*?
+
+Demagun zuk katuen eta txakurren milaka argazki erabiliz entrenatu duzun ordenagailua. Orain, probatu nahi duzu. Zer nolako argazkiak erakutsiko zenioke proba egiteko? Entrenatzeko erabili dituzunak berriz? Edo beste batzuk? Eta nola jakingo zenuke argazki berri horiekin ordenagailuak asmatu duen ala ez? Zer alderatuko zenuke?
+
+IKASLEA:
+ez dakit
+
+IRAKASLEA (IA):
+Ez kezkatu, hau da ulertzeko urrats garrantzitsu bat!
+
+Eredu bat ebaluatzeko, inoiz ikusi ez dituen datuak erabili behar ditugu. Pentsa azterketa batean: ikasle batek ikasi duena ebaluatzeko, ez diogu emango lehenago praktikatu dituen ariketa berdinak, baizik eta berriak, bere ulermena benetan probatzeko.
+
+Beraz, katu eta txakurren kasuan, ordenagailua entrenatzeko erabili ez ditugun *katu eta txakurren irudi berri* batzuk gordeko genituzke. Horri "proba multzoa" deitzen diogu.
+
+Gero, urrats hauek jarraituko genituzke:
+
+1.  **Eman irudi berri bat ordenagailuari:** Adibidez, katu baten argazki bat, entrenamenduan inoiz ikusi ez duena.
+2.  **Ordenagailuak iragarpen bat egingo du:** Esango du "hau katu bat da" edo "hau txakur bat da".
+3.  **Guk badakigu erantzun zuzena:** Guk badakigu irudi hori katu batena dela (gure "proba multzoan" hala dago etiketatuta).
+4.  **Konparatu:** Ordenagailuaren iragarpena guk dakigun erantzun zuzenarekin alderatuko dugu. Asmatu badu, puntu bat; huts egin badu, ez.
+
+Horrela, proba multzoko irudi guztiekin prozesu hau errepikatuz, ordenagailuak zenbat aldiz asmatu duen kalkula dezakegu. Honi "zehaztasuna" deitzen diogu normalean.
+
+Ulertzen al duzu orain zergatik den garrantzitsua entrenamenduan erabili ez diren irudiak erabiltzea eredua ebaluatzeko? Eta zergatik den beharrezkoa *gu* jakitea irudi horien erantzun zuzena?
+
+IKASLEA:
+erakusteko ezta?
+
+IRAKASLEA (IA):
+Bai, erakusteko, baina zehatzago, *ereduak benetan ikasi duela frogatzeko*, eta ez buruz ikasi. Eta erakusteko ere *zein ondo* egiten duen bere lana.
+
+Imaginatu zuk testu-liburu oso bat buruz ikasi duzula. Azterketan liburuko galdera berdinak jarriko balizkizute, oso nota altua aterako zenuke. Baina horrek esan nahiko luke benetan gaia ulertu duzula? Ez nahitaez. Agian bakarrik buruz ikasi duzu.
+
+Horregatik, ebaluatzeko galdera berriak jartzen dira. Ordenagailuekin berdina. *Ez ikusitako irudiekin* probatzen dugunean, frogatzen ari gara ez duela soilik entrenamendu-datuak buruz ikasi, baizik eta katu eta txakurrak bereizteko gai den *ezaugarri orokorrak* ikasi dituela.
+
+Orain arte ikusi dugu Ikusmen Artifizialak irudiak nola prozesatzen dituen (zenbakiak, ertzak), nola ikasten duen (entrenamendu-datuekin, gainbegiratutako ikaskuntzarekin) eta nola ebaluatzen dugun (proba-multzoekin).
+
+Elkarrizketaren hasieran "ordenagailuak ikustea" eta "ordenagailuak irudiak prozesatu eta erabakiak hartzeko gaitasuna" aipatu dituzu.
+
+Orain arte hitz egin dugun guztia kontuan hartuta, Ikusmen Artifiziala deskribatzeko eskatuko banizu, nola laburbilduko zenuke ikasi dugunarekin? Zein dira, zure ustez, Ikusmen Artifizialaren hiru ideia nagusiak, orain arte hitz egin dugunaren arabera?
+
+IKASLEA:
+garunaren funtzionamendua simulatzeko sistema da, ikasten duenaren arabera erabakitzen duena, baina ez du beti ondo ikasten
+
+---------------------------------
+ANALISIA ETA EMAITZAK
+---------------------------------
+
+ULERMEN MAILA: Ertaina
+
+LABURPEN OROKORRA:
+Ikasleak Ikusmen Artifizialaren oinarrizko definizioa ondo ulertzen du, ordenagailuak irudiak prozesatu eta erabakiak hartzeko duen gaitasun gisa. Irudien prozesamendu motak zehazteko zailtasunak izan dituen arren, ertz-detekzioaren kontzeptua eta auto autonomoetan duen garrantzia ongi jaso du. Gainbegiratutako ikaskuntzaren eta entrenamendu-datuen (irudiak eta etiketak) garrantzia ulertzen du. Hala ere, ordenagailuek patroiak nola ikasten dituzten eta ereduen ebaluazioa nola egiten den (bereziki proba-multzoaren erabilera) sakonago landu behar du. Elkarrizketaren amaieran, Ikusmen Artifizialaren hiru ideia nagusiak (garunaren funtzionamendua simulatzea, ikasitakoaren arabera erabakitzea eta beti ondo ez ikastea) bikain laburbildu ditu, ulermen maila duina erakutsiz.
+
+INDARGUNEAK:
+- Ikusmen Artifizialaren oinarrizko definizioa (ordenagailuak ikustea, irudiak prozesatzea, erabakiak hartzea).
+- Irudien prozesamenduaren eta erabakiak hartzearen arteko lotura.
+- Ertzak detektatzeko sistemen garrantzia eta aplikazioa (adibidez, auto autonomoetan).
+- Ikaskuntza automatikoaren eta "aurretik izandako bizipenen" kontzeptua.
+- Entrenamendu-datuen (irudiak eta haien "emaitzak" edo etiketak) erabilera ereduak "baldintzatzeko".
+- Ereduak "balioztatu eta ebaluatu" behar direla.
+- Ikusmen Artifizialaren ideia nagusien laburpena: garunaren funtzionamendua simulatzea, ikasitakoaren arabera erabakitzea eta akatsak egiteko aukera.
+
+HOBETZEKO ARLOAK:
+- Irudiak prozesatzeko urrats edo operazio zehatzak (pixelak, koloreak, formak, testurak).
+- Ordenagailuek irudietan patroiak eta ezaugarriak nola identifikatzen dituzten (ikaskuntza prozesuaren mekanismo sakonagoa).
+- Ereduak ebaluatzeko metodologia praktikoa, batez ere entrenamenduan erabili gabeko datuen ("proba-multzoa") garrantzia eta memorizazioaren eta benetako ulermenaren arteko desberdintasuna.
